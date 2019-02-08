@@ -1,0 +1,2086 @@
+Example 1: text-1-feynman.txt
+----------------------------
+
+---------------------------------------------------------------------
+
+Secret Keyphrase: WISDOM
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+Key Based On WISDOM:
+
+(A B C D E F G H I J K L M N O P Q R S T U V W X Y Z)
+(w i s d o m n p q r t u v x y z a b c e f g h j k l)
+
+Compact key based on WISDOM:
+
+(w i s d o m n p q r t u v x y z a b c e f g h j k l)
+
+This is the key that we have to guess.
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+Plaintext:
+----------
+
+"\tTHEN I HAD ANOTHER THOUGHT: PHYSICS DISGUSTS ME A LITTLE BIT NOW, BUT I USED TO ENJOY DOING PHYSICS. WHY DID I ENJOY IT? I USED TO PLAY WITH IT. I USED TO DO WHATEVER I FELT LIKE DOING-IT DID NOT HAVE TO DO WITH WHETHER IT WAS IMPORTANT FOR THE DEVELOPMENT OF NUCLEAR PHYSICS, BUT WHETHER IT WAS INTERESTING AND AMUSING FOR ME TO PLAY WITH. WHEN I WAS IN HIGH SCHOOL, I WOULD SEE WATER RUNNING OUT OF A FAUCET GROWING NARROWER, AND WONDER IF I COULD FIGURE OUT WHAT DETERMINES THAT CURVE. I FOUND IT WAS RATHER EASY TO DO. I DID NOT HAVE TO DO IT; IT WAS NOT IMPORTANT FOR THE FUTURE OF SCIENCE; SOMEBODY ELSE HAD ALREADY DONE IT. THAT DID NOT MAKE ANY DIFFERENCE. I WOULD INVENT THINGS AND PLAY WITH THINGS FOR MY OWN ENTERTAINMENT.\n\nSO I GOT THIS NEW ATTITUDE. NOW THAT I AM BURNED OUT AND I WILL NEVER ACCOMPLISH ANYTHING, I HAVE GOT THIS NICE POSITION AT THE UNIVERSITY TEACHING CLASSES WHICH I RATHER ENJOY, AND JUST LIKE I READ THE ARABIAN NIGHTS FOR PLEASURE, I AM GOING TO PLAY WITH PHYSICS, WHENEVER I WANT TO, WITHOUT WORRYING ABOUT ANY IMPORTANCE WHATSOEVER.\n\nWITHIN A WEEK I WAS IN THE CAFETERIA AND SOME GUY, FOOLING AROUND, THROWS A PLATE IN THE AIR. AS THE PLATE WENT UP IN THE AIR I SAW IT WOBBLE, AND I NOTICED THE RED MEDALLION  ON THE PLATE GOING AROUND. IT WAS PRETTY OBVIOUS TO ME THAT IT WENT AROUND FASTER THAN THE WOBBLING.\n\nI HAD NOTHING TO DO, SO I START TO FIGURE OUT THE MOTION OF THE ROTATING PLATE. I DISCOVER THAT WHEN THE ANGLE IS VERY SLIGHT, THE MEDALLION ROTATES TWICE AS FAST AS THE WOBBLE RATE – TWO TO ONE. IT CAME OUT OF A COMPLICATED EQUATION! THEN I THOUGHT, \"IS THERE SOME WAY I CAN SEE IN A MORE FUNDAMENTAL WAY, BY LOOKING AT THE FORCES OR THE DYNAMICS, WHY IS IT TWO TO ONE?\"\n\nI DO NOT REMEMBER HOW I DID IT, BUT I ULTIMATELY WORKED OUT WHAT THE MOTION OF THE MASS PARTICLES IS, AND HOW ALL THE ACCELERATIONS BALANCE TO MAKE IT COME OUT TWO TO ONE.\n\nI STILL REMEMBER GOING TO A SCIENTIST AND SAYING, \"HEY,  I NOTICED SOMETHING INTERESTING. HERE THE PLATE GOES AROUND SO, AND THE REASON IT IS TWO TO ONE IS...\" AND I SHOWED HIM THE ACCELERATIONS.\n\nHE SAYS, \"THAT IS PRETTY INTERESTING, BUT WHAT IS THE IMPORTANCE OF IT? WHY ARE YOU DOING IT?\"\n\n\"HAH!\" I SAY. \"THERE IS NO IMPORTANCE WHATSOEVER. I AM JUST DOING IT FOR THE FUN OF IT.\" HIS REACTION DID NOT DISCOURAGE ME; I HAD MADE UP MY MIND I WAS GOING TO ENJOY PHYSICS AND DO WHATEVER I LIKED.\n\nI WENT ON TO WORK OUT EQUATIONS OF WOBBLES. THEN I THOUGHT ABOUT HOW ELECTRON ORBITS START TO MOVE IN RELATIVITY. THEN THERE IS AN QUATION IN ELECTRODYNAMICS. AND THEN QUANTUM ELECTRODYNAMICS. AND BEFORE I KNEW IT (IT WAS A VERY SHORT TIME) I WAS PLAYING, WORKING, REALLY WITH THE SAME OLD PROBLEM THAT I LOVED SO MUCH, THAT I HAD STOPPED WORKING ON WHEN I WENT TO LOS ALAMOS: MY THESIS-TYPE PROBLEMS; ALL THOSE OLD-FASHIONED, WONDERFUL THINGS.\n\nIT WAS EFFORTLESS. IT WAS EASY TO PLAY WITH THESE THINGS. IT WAS LIKE UNCORKING A BOTTLE: EVERYTHING FLOWED OUT EFFORTLESSLY. I ALMOST TRIED TO RESIST IT! THERE WAS NO IMPORTANCE TO WHAT I WAS DOING, BUT ULTIMATELY THERE WAS. THE DIAGRAMS AND THE WHOLE BUSINESS THAT I GOT THE NOBEL PRIZE FOR CAME FROM THAT PIDDLING AROUND WITH THE WOBBLING PLATE.\n\n\n"
+
+Ciphertext
+----------
+
+"\tepox q pwd wxyepob epyfnpe: zpkcqsc dqcnfcec vo w uqeeuo iqe xyh, ife q fcod ey oxryk dyqxn zpkcqsc. hpk dqd q oxryk qe? q fcod ey zuwk hqep qe. q fcod ey dy hpweogob q moue uqto dyqxn-qe dqd xye pwgo ey dy hqep hpoepob qe hwc qvzybewxe myb epo dogouyzvoxe ym xfsuowb zpkcqsc, ife hpoepob qe hwc qxeoboceqxn wxd wvfcqxn myb vo ey zuwk hqep. hpox q hwc qx pqnp cspyyu, q hyfud coo hweob bfxxqxn yfe ym w mwfsoe nbyhqxn xwbbyhob, wxd hyxdob qm q syfud mqnfbo yfe hpwe doeobvqxoc epwe sfbgo. q myfxd qe hwc bwepob owck ey dy. q dqd xye pwgo ey dy qe; qe hwc xye qvzybewxe myb epo mfefbo ym csqoxso; cyvoiydk ouco pwd wubowdk dyxo qe. epwe dqd xye vwto wxk dqmmoboxso. q hyfud qxgoxe epqxnc wxd zuwk hqep epqxnc myb vk yhx oxeobewqxvoxe.\n\ncy q nye epqc xoh weeqefdo. xyh epwe q wv ifbxod yfe wxd q hquu xogob wssyvzuqcp wxkepqxn, q pwgo nye epqc xqso zycqeqyx we epo fxqgobcqek eowspqxn suwccoc hpqsp q bwepob oxryk, wxd rfce uqto q bowd epo wbwiqwx xqnpec myb zuowcfbo, q wv nyqxn ey zuwk hqep zpkcqsc, hpoxogob q hwxe ey, hqepyfe hybbkqxn wiyfe wxk qvzybewxso hpwecyogob.\n\nhqepqx w hoot q hwc qx epo swmoeobqw wxd cyvo nfk, myyuqxn wbyfxd, epbyhc w zuweo qx epo wqb. wc epo zuweo hoxe fz qx epo wqb q cwh qe hyiiuo, wxd q xyeqsod epo bod vodwuuqyx  yx epo zuweo nyqxn wbyfxd. qe hwc zboeek yigqyfc ey vo epwe qe hoxe wbyfxd mwceob epwx epo hyiiuqxn.\n\nq pwd xyepqxn ey dy, cy q cewbe ey mqnfbo yfe epo vyeqyx ym epo byeweqxn zuweo. q dqcsygob epwe hpox epo wxnuo qc gobk cuqnpe, epo vodwuuqyx byeweoc ehqso wc mwce wc epo hyiiuo bweo – ehy ey yxo. qe swvo yfe ym w syvzuqsweod oafweqyx! epox q epyfnpe, \"qc epobo cyvo hwk q swx coo qx w vybo mfxdwvoxewu hwk, ik uyytqxn we epo mybsoc yb epo dkxwvqsc, hpk qc qe ehy ey yxo?\"\n\nq dy xye bovoviob pyh q dqd qe, ife q fueqvweouk hybtod yfe hpwe epo vyeqyx ym epo vwcc zwbeqsuoc qc, wxd pyh wuu epo wssouobweqyxc iwuwxso ey vwto qe syvo yfe ehy ey yxo.\n\nq cequu bovoviob nyqxn ey w csqoxeqce wxd cwkqxn, \"pok,  q xyeqsod cyvoepqxn qxeoboceqxn. pobo epo zuweo nyoc wbyfxd cy, wxd epo bowcyx qe qc ehy ey yxo qc...\" wxd q cpyhod pqv epo wssouobweqyxc.\n\npo cwkc, \"epwe qc zboeek qxeoboceqxn, ife hpwe qc epo qvzybewxso ym qe? hpk wbo kyf dyqxn qe?\"\n\n\"pwp!\" q cwk. \"epobo qc xy qvzybewxso hpwecyogob. q wv rfce dyqxn qe myb epo mfx ym qe.\" pqc bowseqyx dqd xye dqcsyfbwno vo; q pwd vwdo fz vk vqxd q hwc nyqxn ey oxryk zpkcqsc wxd dy hpweogob q uqtod.\n\nq hoxe yx ey hybt yfe oafweqyxc ym hyiiuoc. epox q epyfnpe wiyfe pyh ouosebyx ybiqec cewbe ey vygo qx bouweqgqek. epox epobo qc wx afweqyx qx ouosebydkxwvqsc. wxd epox afwxefv ouosebydkxwvqsc. wxd iomybo q txoh qe (qe hwc w gobk cpybe eqvo) q hwc zuwkqxn, hybtqxn, bowuuk hqep epo cwvo yud zbyiuov epwe q uygod cy vfsp, epwe q pwd ceyzzod hybtqxn yx hpox q hoxe ey uyc wuwvyc: vk epocqc-ekzo zbyiuovc; wuu epyco yud-mwcpqyxod, hyxdobmfu epqxnc.\n\nqe hwc ommybeuocc. qe hwc owck ey zuwk hqep epoco epqxnc. qe hwc uqto fxsybtqxn w iyeeuo: ogobkepqxn muyhod yfe ommybeuoccuk. q wuvyce ebqod ey bocqce qe! epobo hwc xy qvzybewxso ey hpwe q hwc dyqxn, ife fueqvweouk epobo hwc. epo dqwnbwvc wxd epo hpyuo ifcqxocc epwe q nye epo xyiou zbqlo myb swvo mbyv epwe zqdduqxn wbyfxd hqep epo hyiiuqxn zuweo.\n\n\n"
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+The initial guessed key is of course empty.
+-------------------------------------------
+
+(A B C D E F G H I J K L M N O P Q R S T U V W X Y Z)
+(_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _)
+
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+The strategy etai is call with
+- The empty key
+- the ciphertext shown above
+
+The result is:
+
+Subs:
+'(((#\E . #\e) (#\T . #\o) (#\A . #\q) (#\I . #\w))
+  ((#\E . #\e) (#\T . #\o) (#\A . #\w) (#\I . #\q))
+  ((#\E . #\o) (#\T . #\e) (#\A . #\q) (#\I . #\w))
+  ((#\E . #\o) (#\T . #\e) (#\A . #\w) (#\I . #\q))
+  ((#\E . #\e) (#\T . #\o) (#\A . #\q) (#\I . #\w))
+  ((#\E . #\e) (#\T . #\o) (#\A . #\w) (#\I . #\q))
+  ((#\E . #\o) (#\T . #\e) (#\A . #\q) (#\I . #\w))
+  ((#\E . #\o) (#\T . #\e) (#\A . #\w) (#\I . #\q))
+  ((#\E . #\e) (#\T . #\y) (#\A . #\q) (#\I . #\w))
+  ((#\E . #\e) (#\T . #\y) (#\A . #\w) (#\I . #\q))
+  ((#\E . #\y) (#\T . #\e) (#\A . #\q) (#\I . #\w))
+  ((#\E . #\y) (#\T . #\e) (#\A . #\w) (#\I . #\q))
+  ((#\E . #\o) (#\T . #\y) (#\A . #\q) (#\I . #\w))
+  ((#\E . #\o) (#\T . #\y) (#\A . #\w) (#\I . #\q))
+  ((#\E . #\y) (#\T . #\o) (#\A . #\q) (#\I . #\w))
+  ((#\E . #\y) (#\T . #\o) (#\A . #\w) (#\I . #\q))
+  ((#\E . #\e) (#\T . #\y) (#\A . #\q) (#\I . #\w))
+  ((#\E . #\e) (#\T . #\y) (#\A . #\w) (#\I . #\q))
+  ((#\E . #\y) (#\T . #\e) (#\A . #\q) (#\I . #\w))
+  ((#\E . #\y) (#\T . #\e) (#\A . #\w) (#\I . #\q))
+  ((#\E . #\o) (#\T . #\y) (#\A . #\q) (#\I . #\w))
+  ((#\E . #\o) (#\T . #\y) (#\A . #\w) (#\I . #\q))
+  ((#\E . #\y) (#\T . #\o) (#\A . #\q) (#\I . #\w))
+  ((#\E . #\y) (#\T . #\o) (#\A . #\w) (#\I . #\q)))
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+Incorporating the first substitution ((E . e) (T . o) (A . q) (I . w))
+in the initial key gives the modified key:
+
+
+(A B C D E F G H I J K L M N O P Q R S T U V W X Y Z)
+(q _ _ _ e _ _ _ w _ _ _ _ _ _ _ _ _ _ o _ _ _ _ _ _)
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+
+ciphertext monograms
+--------------------
+
+'(#\e #\o #\q #\y #\w #\x #\p #\c #\b #\d #\h #\u #\f #\v #\n #\k #\s #\m #\z #\i #\g #\t #\r #\a #\l)
+
+
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+ciphertext neighbourhood table
+------------------------------
+
+'((#\o . 36)
+  (#\y . 35)
+  (#\q . 34)
+  (#\w . 34)
+  (#\b . 27)
+  (#\c . 26)
+  (#\f . 25)
+  (#\e . 24)
+  (#\u . 24)
+  (#\x . 24)
+  (#\k . 19)
+  (#\v . 18)
+  (#\s . 17)
+  (#\d . 14)
+  (#\i . 14)
+  (#\p . 14)
+  (#\m . 13)
+  (#\z . 13)
+  (#\n . 12)
+  (#\h . 11)
+  (#\g . 9)
+  (#\t . 8)
+  (#\r . 3)
+  (#\a . 2)
+  (#\l . 2)
+  (#\j . 0))
+
+Performing crack-cipher
+Using key: (_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _)
+--------------------------------------------
+--------------------------------------------
+Starting with substitution:
+ ((E . e) (T . o) (A . q) (I . w))
+
+Modified Key:
+ (q _ _ _ e _ _ _ w _ _ _ _ _ _ _ _ _ _ o _ _ _ _ _ _)
+
+Starting a dictionary closure
+
+Starting at the beginning of the word list:
+
+EpTx --> multiple matches (EATS ESTE ...)
+A --> skipping this one
+pId --> multiple matches (HIS HIM ...)
+IxyEpTb --> multiple matches (INSECTS INSERTS ...)
+EpyfnpE --> multiple matches (EVASIVE ESPOUSE ...)
+zpkcAsc --> multiple matches (DISEASE CONTACT ...)
+dAcnfcEc --> no match
+--------------------------------------------
+--------------------------------------------
+Starting with substitution:
+ ((E . e) (T . o) (A . w) (I . q))
+
+Modified Key:
+ (w _ _ _ e _ _ _ q _ _ _ _ _ _ _ _ _ _ o _ _ _ _ _ _)
+
+Starting a dictionary closure
+
+Starting at the beginning of the word list:
+
+EpTx --> multiple matches (EATS ESTE ...)
+I --> skipping this one
+pAd --> multiple matches (WAS HAD ...)
+AxyEpTb --> multiple matches (ASPECTS AFFECTS ...)
+EpyfnpE --> multiple matches (EVASIVE ESPOUSE ...)
+zpkcIsc --> multiple matches (OPINION RECEIVE ...)
+dIcnfcEc --> multiple matches (DISEASES DISPOSES ...)
+vT --> multiple matches (IT AT ...)
+A --> skipping this one
+uIEEuT --> no match
+--------------------------------------------
+--------------------------------------------
+Starting with substitution:
+ ((E . o) (T . e) (A . q) (I . w))
+
+Modified Key:
+ (q _ _ _ o _ _ _ w _ _ _ _ _ _ _ _ _ _ e _ _ _ _ _ _)
+
+Starting a dictionary closure
+
+Starting at the beginning of the word list:
+
+TpEx --> multiple matches (THEY THEM ...)
+A --> skipping this one
+pId --> multiple matches (HIS HIM ...)
+IxyTpEb --> no match
+--------------------------------------------
+--------------------------------------------
+Starting with substitution:
+ ((E . o) (T . e) (A . w) (I . q))
+
+Modified Key:
+ (w _ _ _ o _ _ _ q _ _ _ _ _ _ _ _ _ _ e _ _ _ _ _ _)
+
+Starting a dictionary closure
+
+Starting at the beginning of the word list:
+
+TpEx --> multiple matches (THEY THEM ...)
+I --> skipping this one
+pAd --> multiple matches (WAS HAD ...)
+AxyTpEb --> multiple matches (ANOTHER ABETTED ...)
+TpyfnpT --> multiple matches (THOUGHT TURNOUT ...)
+zpkcIsc --> multiple matches (OPINION RECEIVE ...)
+dIcnfcTc --> multiple matches (DISGUSTS DISGUSTS ...)
+vE --> multiple matches (BE HE ...)
+A --> skipping this one
+uITTuE --> unique match   little
+  dc*: (A B C D E F G H I J K L M N O P Q R S T U V W X Y Z)
+       (w _ _ _ o _ _ _ q _ _ u _ _ _ _ _ _ _ e _ _ _ _ _ _)
+Starting at the beginning of the word list:
+
+TpEx --> multiple matches (THEY THEM ...)
+I --> skipping this one
+pAd --> multiple matches (WAS HAD ...)
+AxyTpEb --> multiple matches (ANOTHER ABETTED ...)
+TpyfnpT --> multiple matches (THOUGHT TURNOUT ...)
+zpkcIsc --> multiple matches (OPINION RECEIVE ...)
+dIcnfcTc --> multiple matches (DISGUSTS DISGUSTS ...)
+vE --> multiple matches (BE HE ...)
+A --> skipping this one
+LITTLE --> skipping this one
+iIT --> multiple matches (BIT FIT ...)
+xyh --> multiple matches (THE AND ...)
+ifT --> multiple matches (NOT BUT ...)
+I --> skipping this one
+fcEd --> multiple matches (THEY BEEN ...)
+Ty --> multiple matches (TO TV ...)
+Exryk --> multiple matches (EVERY EARLY ...)
+dyIxn --> multiple matches (WHICH BEING ...)
+zpkcIsc --> multiple matches (OPINION RECEIVE ...)
+hpk --> multiple matches (THE AND ...)
+dId --> multiple matches (DID III ...)
+I --> skipping this one
+Exryk --> multiple matches (EVERY EARLY ...)
+IT --> skipping this one
+I --> skipping this one
+fcEd --> multiple matches (THEY BEEN ...)
+Ty --> multiple matches (TO TV ...)
+zLAk --> multiple matches (PLAN PLAY ...)
+hITp --> multiple matches (WITH CITY ...)
+IT --> skipping this one
+I --> skipping this one
+fcEd --> multiple matches (THEY BEEN ...)
+Ty --> multiple matches (TO TV ...)
+dy --> multiple matches (OF TO ...)
+hpATEgEb --> multiple matches (WHATEVER PLATELET ...)
+I --> skipping this one
+mELT --> multiple matches (FELT BELT ...)
+LItE --> multiple matches (LIKE LIFE ...)
+dyIxn --> multiple matches (WHICH BEING ...)
+IT --> skipping this one
+dId --> multiple matches (DID III ...)
+xyT --> multiple matches (NOT BUT ...)
+pAgE --> multiple matches (HAVE MADE ...)
+Ty --> multiple matches (TO TV ...)
+dy --> multiple matches (OF TO ...)
+hITp --> multiple matches (WITH CITY ...)
+hpETpEb --> multiple matches (WHETHER PIETIES ...)
+IT --> skipping this one
+hAc --> multiple matches (WAS HAD ...)
+IvzybTAxT --> unique match   important
+  dc*: (A B C D E F G H I J K L M N O P Q R S T U V W X Y Z)
+       (w _ _ _ o _ _ _ q _ _ u v x y z _ b _ e _ _ _ _ _ _)
+Starting at the beginning of the word list:
+
+TpEN --> multiple matches (THEN TEEN ...)
+I --> skipping this one
+pAd --> multiple matches (WAS HAD ...)
+ANOTpER --> unique match   another
+  dc*: (A B C D E F G H I J K L M N O P Q R S T U V W X Y Z)
+       (w _ _ _ o _ _ p q _ _ u v x y z _ b _ e _ _ _ _ _ _)
+Starting at the beginning of the word list:
+
+THEN --> skipping this one
+I --> skipping this one
+HAd --> multiple matches (HAD HAS ...)
+ANOTHER --> skipping this one
+THOfnHT --> unique match   thought
+  dc*: (A B C D E F G H I J K L M N O P Q R S T U V W X Y Z)
+       (w _ _ _ o _ n p q _ _ u v x y z _ b _ e f _ _ _ _ _)
+Starting at the beginning of the word list:
+
+THEN --> skipping this one
+I --> skipping this one
+HAd --> multiple matches (HAD HAS ...)
+ANOTHER --> skipping this one
+THOUGHT --> skipping this one
+PHkcIsc --> unique match   physics
+  dc*: (A B C D E F G H I J K L M N O P Q R S T U V W X Y Z)
+       (w _ s _ o _ n p q _ _ u v x y z _ b c e f _ _ _ k _)
+Starting at the beginning of the word list:
+
+THEN --> skipping this one
+I --> skipping this one
+HAd --> multiple matches (HAD HAS ...)
+ANOTHER --> skipping this one
+THOUGHT --> skipping this one
+PHYSICS --> skipping this one
+dISGUSTS --> multiple matches (DISGUSTS DISGUSTS ...)
+ME --> skipping this one
+A --> skipping this one
+LITTLE --> skipping this one
+iIT --> multiple matches (BIT FIT ...)
+NOh --> multiple matches (NOT NOW ...)
+iUT --> multiple matches (BUT OUT ...)
+I --> skipping this one
+USEd --> multiple matches (USED USES ...)
+TO --> skipping this one
+ENrOY --> multiple matches (ENJOY ENVOY ...)
+dOING --> multiple matches (GOING DOING ...)
+PHYSICS --> skipping this one
+hHY --> multiple matches (WHY THY ...)
+dId --> multiple matches (DID III ...)
+I --> skipping this one
+ENrOY --> multiple matches (ENJOY ENVOY ...)
+IT --> skipping this one
+I --> skipping this one
+USEd --> multiple matches (USED USES ...)
+TO --> skipping this one
+PLAY --> skipping this one
+hITH --> multiple matches (WITH PITH ...)
+IT --> skipping this one
+I --> skipping this one
+USEd --> multiple matches (USED USES ...)
+TO --> skipping this one
+dO --> multiple matches (TO SO ...)
+hHATEgER --> unique match   whatever
+  dc*: (A B C D E F G H I J K L M N O P Q R S T U V W X Y Z)
+       (w _ s _ o _ n p q _ _ u v x y z _ b c e f g h _ k _)
+Starting at the beginning of the word list:
+
+THEN --> skipping this one
+I --> skipping this one
+HAd --> multiple matches (HAD HAS ...)
+ANOTHER --> skipping this one
+THOUGHT --> skipping this one
+PHYSICS --> skipping this one
+dISGUSTS --> multiple matches (DISGUSTS DISGUSTS ...)
+ME --> skipping this one
+A --> skipping this one
+LITTLE --> skipping this one
+iIT --> multiple matches (BIT FIT ...)
+NOW --> skipping this one
+iUT --> multiple matches (BUT OUT ...)
+I --> skipping this one
+USEd --> multiple matches (USED USES ...)
+TO --> skipping this one
+ENrOY --> multiple matches (ENJOY ENVOY ...)
+dOING --> multiple matches (GOING DOING ...)
+PHYSICS --> skipping this one
+WHY --> skipping this one
+dId --> multiple matches (DID III ...)
+I --> skipping this one
+ENrOY --> multiple matches (ENJOY ENVOY ...)
+IT --> skipping this one
+I --> skipping this one
+USEd --> multiple matches (USED USES ...)
+TO --> skipping this one
+PLAY --> skipping this one
+WITH --> skipping this one
+IT --> skipping this one
+I --> skipping this one
+USEd --> multiple matches (USED USES ...)
+TO --> skipping this one
+dO --> multiple matches (TO SO ...)
+WHATEVER --> skipping this one
+I --> skipping this one
+mELT --> multiple matches (FELT BELT ...)
+LItE --> multiple matches (LIKE LIFE ...)
+dOING --> multiple matches (GOING DOING ...)
+IT --> skipping this one
+dId --> multiple matches (DID III ...)
+NOT --> skipping this one
+HAVE --> skipping this one
+TO --> skipping this one
+dO --> multiple matches (TO SO ...)
+WITH --> skipping this one
+WHETHER --> skipping this one
+IT --> skipping this one
+WAS --> skipping this one
+IMPORTANT --> skipping this one
+mOR --> multiple matches (FOR NOR ...)
+THE --> skipping this one
+dEVELOPMENT --> unique match   development
+  dc*: (A B C D E F G H I J K L M N O P Q R S T U V W X Y Z)
+       (w _ s d o _ n p q _ _ u v x y z _ b c e f g h _ k _)
+Starting at the beginning of the word list:
+
+THEN --> skipping this one
+I --> skipping this one
+HAD --> skipping this one
+ANOTHER --> skipping this one
+THOUGHT --> skipping this one
+PHYSICS --> skipping this one
+DISGUSTS --> skipping this one
+ME --> skipping this one
+A --> skipping this one
+LITTLE --> skipping this one
+iIT --> multiple matches (BIT FIT ...)
+NOW --> skipping this one
+iUT --> multiple matches (BUT OUT ...)
+I --> skipping this one
+USED --> skipping this one
+TO --> skipping this one
+ENrOY --> multiple matches (ENJOY ENVOY ...)
+DOING --> skipping this one
+PHYSICS --> skipping this one
+WHY --> skipping this one
+DID --> skipping this one
+I --> skipping this one
+ENrOY --> multiple matches (ENJOY ENVOY ...)
+IT --> skipping this one
+I --> skipping this one
+USED --> skipping this one
+TO --> skipping this one
+PLAY --> skipping this one
+WITH --> skipping this one
+IT --> skipping this one
+I --> skipping this one
+USED --> skipping this one
+TO --> skipping this one
+DO --> skipping this one
+WHATEVER --> skipping this one
+I --> skipping this one
+mELT --> multiple matches (FELT BELT ...)
+LItE --> multiple matches (LIKE LIFE ...)
+DOING --> skipping this one
+IT --> skipping this one
+DID --> skipping this one
+NOT --> skipping this one
+HAVE --> skipping this one
+TO --> skipping this one
+DO --> skipping this one
+WITH --> skipping this one
+WHETHER --> skipping this one
+IT --> skipping this one
+WAS --> skipping this one
+IMPORTANT --> skipping this one
+mOR --> multiple matches (FOR NOR ...)
+THE --> skipping this one
+DEVELOPMENT --> skipping this one
+Om --> multiple matches (OF ON ...)
+NUCLEAR --> skipping this one
+PHYSICS --> skipping this one
+iUT --> multiple matches (BUT OUT ...)
+WHETHER --> skipping this one
+IT --> skipping this one
+WAS --> skipping this one
+INTERESTING --> skipping this one
+AND --> skipping this one
+AMUSING --> skipping this one
+mOR --> multiple matches (FOR NOR ...)
+ME --> skipping this one
+TO --> skipping this one
+PLAY --> skipping this one
+WITH --> skipping this one
+WHEN --> skipping this one
+I --> skipping this one
+WAS --> skipping this one
+IN --> skipping this one
+HIGH --> skipping this one
+SCHOOL --> skipping this one
+I --> skipping this one
+WOULD --> skipping this one
+SEE --> skipping this one
+WATER --> skipping this one
+RUNNING --> skipping this one
+OUT --> skipping this one
+Om --> multiple matches (OF ON ...)
+A --> skipping this one
+mAUCET --> unique match   faucet
+  dc*: (A B C D E F G H I J K L M N O P Q R S T U V W X Y Z)
+       (w _ s d o m n p q _ _ u v x y z _ b c e f g h _ k _)
+Starting at the beginning of the word list:
+
+THEN --> skipping this one
+I --> skipping this one
+HAD --> skipping this one
+ANOTHER --> skipping this one
+THOUGHT --> skipping this one
+PHYSICS --> skipping this one
+DISGUSTS --> skipping this one
+ME --> skipping this one
+A --> skipping this one
+LITTLE --> skipping this one
+iIT --> multiple matches (BIT FIT ...)
+NOW --> skipping this one
+iUT --> multiple matches (BUT OUT ...)
+I --> skipping this one
+USED --> skipping this one
+TO --> skipping this one
+ENrOY --> multiple matches (ENJOY ENVOY ...)
+DOING --> skipping this one
+PHYSICS --> skipping this one
+WHY --> skipping this one
+DID --> skipping this one
+I --> skipping this one
+ENrOY --> multiple matches (ENJOY ENVOY ...)
+IT --> skipping this one
+I --> skipping this one
+USED --> skipping this one
+TO --> skipping this one
+PLAY --> skipping this one
+WITH --> skipping this one
+IT --> skipping this one
+I --> skipping this one
+USED --> skipping this one
+TO --> skipping this one
+DO --> skipping this one
+WHATEVER --> skipping this one
+I --> skipping this one
+FELT --> skipping this one
+LItE --> multiple matches (LIKE LIFE ...)
+DOING --> skipping this one
+IT --> skipping this one
+DID --> skipping this one
+NOT --> skipping this one
+HAVE --> skipping this one
+TO --> skipping this one
+DO --> skipping this one
+WITH --> skipping this one
+WHETHER --> skipping this one
+IT --> skipping this one
+WAS --> skipping this one
+IMPORTANT --> skipping this one
+FOR --> skipping this one
+THE --> skipping this one
+DEVELOPMENT --> skipping this one
+OF --> skipping this one
+NUCLEAR --> skipping this one
+PHYSICS --> skipping this one
+iUT --> multiple matches (BUT OUT ...)
+WHETHER --> skipping this one
+IT --> skipping this one
+WAS --> skipping this one
+INTERESTING --> skipping this one
+AND --> skipping this one
+AMUSING --> skipping this one
+FOR --> skipping this one
+ME --> skipping this one
+TO --> skipping this one
+PLAY --> skipping this one
+WITH --> skipping this one
+WHEN --> skipping this one
+I --> skipping this one
+WAS --> skipping this one
+IN --> skipping this one
+HIGH --> skipping this one
+SCHOOL --> skipping this one
+I --> skipping this one
+WOULD --> skipping this one
+SEE --> skipping this one
+WATER --> skipping this one
+RUNNING --> skipping this one
+OUT --> skipping this one
+OF --> skipping this one
+A --> skipping this one
+FAUCET --> skipping this one
+GROWING --> skipping this one
+NARROWER --> skipping this one
+AND --> skipping this one
+WONDER --> skipping this one
+IF --> skipping this one
+I --> skipping this one
+COULD --> skipping this one
+FIGURE --> skipping this one
+OUT --> skipping this one
+WHAT --> skipping this one
+DETERMINES --> skipping this one
+THAT --> skipping this one
+CURVE --> skipping this one
+I --> skipping this one
+FOUND --> skipping this one
+IT --> skipping this one
+WAS --> skipping this one
+RATHER --> skipping this one
+EASY --> skipping this one
+TO --> skipping this one
+DO --> skipping this one
+I --> skipping this one
+DID --> skipping this one
+NOT --> skipping this one
+HAVE --> skipping this one
+TO --> skipping this one
+DO --> skipping this one
+IT --> skipping this one
+IT --> skipping this one
+WAS --> skipping this one
+NOT --> skipping this one
+IMPORTANT --> skipping this one
+FOR --> skipping this one
+THE --> skipping this one
+FUTURE --> skipping this one
+OF --> skipping this one
+SCIENCE --> skipping this one
+SOMEiODY --> unique match   somebody
+  dc*: (A B C D E F G H I J K L M N O P Q R S T U V W X Y Z)
+       (w i s d o m n p q _ _ u v x y z _ b c e f g h _ k _)
+Starting at the beginning of the word list:
+
+THEN --> skipping this one
+I --> skipping this one
+HAD --> skipping this one
+ANOTHER --> skipping this one
+THOUGHT --> skipping this one
+PHYSICS --> skipping this one
+DISGUSTS --> skipping this one
+ME --> skipping this one
+A --> skipping this one
+LITTLE --> skipping this one
+BIT --> skipping this one
+NOW --> skipping this one
+BUT --> skipping this one
+I --> skipping this one
+USED --> skipping this one
+TO --> skipping this one
+ENrOY --> multiple matches (ENJOY ENVOY ...)
+DOING --> skipping this one
+PHYSICS --> skipping this one
+WHY --> skipping this one
+DID --> skipping this one
+I --> skipping this one
+ENrOY --> multiple matches (ENJOY ENVOY ...)
+IT --> skipping this one
+I --> skipping this one
+USED --> skipping this one
+TO --> skipping this one
+PLAY --> skipping this one
+WITH --> skipping this one
+IT --> skipping this one
+I --> skipping this one
+USED --> skipping this one
+TO --> skipping this one
+DO --> skipping this one
+WHATEVER --> skipping this one
+I --> skipping this one
+FELT --> skipping this one
+LItE --> multiple matches (LIKE LIFE ...)
+DOING --> skipping this one
+IT --> skipping this one
+DID --> skipping this one
+NOT --> skipping this one
+HAVE --> skipping this one
+TO --> skipping this one
+DO --> skipping this one
+WITH --> skipping this one
+WHETHER --> skipping this one
+IT --> skipping this one
+WAS --> skipping this one
+IMPORTANT --> skipping this one
+FOR --> skipping this one
+THE --> skipping this one
+DEVELOPMENT --> skipping this one
+OF --> skipping this one
+NUCLEAR --> skipping this one
+PHYSICS --> skipping this one
+BUT --> skipping this one
+WHETHER --> skipping this one
+IT --> skipping this one
+WAS --> skipping this one
+INTERESTING --> skipping this one
+AND --> skipping this one
+AMUSING --> skipping this one
+FOR --> skipping this one
+ME --> skipping this one
+TO --> skipping this one
+PLAY --> skipping this one
+WITH --> skipping this one
+WHEN --> skipping this one
+I --> skipping this one
+WAS --> skipping this one
+IN --> skipping this one
+HIGH --> skipping this one
+SCHOOL --> skipping this one
+I --> skipping this one
+WOULD --> skipping this one
+SEE --> skipping this one
+WATER --> skipping this one
+RUNNING --> skipping this one
+OUT --> skipping this one
+OF --> skipping this one
+A --> skipping this one
+FAUCET --> skipping this one
+GROWING --> skipping this one
+NARROWER --> skipping this one
+AND --> skipping this one
+WONDER --> skipping this one
+IF --> skipping this one
+I --> skipping this one
+COULD --> skipping this one
+FIGURE --> skipping this one
+OUT --> skipping this one
+WHAT --> skipping this one
+DETERMINES --> skipping this one
+THAT --> skipping this one
+CURVE --> skipping this one
+I --> skipping this one
+FOUND --> skipping this one
+IT --> skipping this one
+WAS --> skipping this one
+RATHER --> skipping this one
+EASY --> skipping this one
+TO --> skipping this one
+DO --> skipping this one
+I --> skipping this one
+DID --> skipping this one
+NOT --> skipping this one
+HAVE --> skipping this one
+TO --> skipping this one
+DO --> skipping this one
+IT --> skipping this one
+IT --> skipping this one
+WAS --> skipping this one
+NOT --> skipping this one
+IMPORTANT --> skipping this one
+FOR --> skipping this one
+THE --> skipping this one
+FUTURE --> skipping this one
+OF --> skipping this one
+SCIENCE --> skipping this one
+SOMEBODY --> skipping this one
+ELSE --> skipping this one
+HAD --> skipping this one
+ALREADY --> skipping this one
+DONE --> skipping this one
+IT --> skipping this one
+THAT --> skipping this one
+DID --> skipping this one
+NOT --> skipping this one
+MAtE --> multiple matches (MADE MAKE ...)
+ANY --> skipping this one
+DIFFERENCE --> skipping this one
+I --> skipping this one
+WOULD --> skipping this one
+INVENT --> skipping this one
+THINGS --> skipping this one
+AND --> skipping this one
+PLAY --> skipping this one
+WITH --> skipping this one
+THINGS --> skipping this one
+FOR --> skipping this one
+MY --> skipping this one
+OWN --> skipping this one
+ENTERTAINMENT --> skipping this one
+SO --> skipping this one
+I --> skipping this one
+GOT --> skipping this one
+THIS --> skipping this one
+NEW --> skipping this one
+ATTITUDE --> skipping this one
+NOW --> skipping this one
+THAT --> skipping this one
+I --> skipping this one
+AM --> skipping this one
+BURNED --> skipping this one
+OUT --> skipping this one
+AND --> skipping this one
+I --> skipping this one
+WILL --> skipping this one
+NEVER --> skipping this one
+ACCOMPLISH --> skipping this one
+ANYTHING --> skipping this one
+I --> skipping this one
+HAVE --> skipping this one
+GOT --> skipping this one
+THIS --> skipping this one
+NICE --> skipping this one
+POSITION --> skipping this one
+AT --> skipping this one
+THE --> skipping this one
+UNIVERSITY --> skipping this one
+TEACHING --> skipping this one
+CLASSES --> skipping this one
+WHICH --> skipping this one
+I --> skipping this one
+RATHER --> skipping this one
+ENrOY --> multiple matches (ENJOY ENVOY ...)
+AND --> skipping this one
+rUST --> multiple matches (MUST JUST ...)
+LItE --> multiple matches (LIKE LIFE ...)
+I --> skipping this one
+READ --> skipping this one
+THE --> skipping this one
+ARABIAN --> skipping this one
+NIGHTS --> skipping this one
+FOR --> skipping this one
+PLEASURE --> skipping this one
+I --> skipping this one
+AM --> skipping this one
+GOING --> skipping this one
+TO --> skipping this one
+PLAY --> skipping this one
+WITH --> skipping this one
+PHYSICS --> skipping this one
+WHENEVER --> skipping this one
+I --> skipping this one
+WANT --> skipping this one
+TO --> skipping this one
+WITHOUT --> skipping this one
+WORRYING --> skipping this one
+ABOUT --> skipping this one
+ANY --> skipping this one
+IMPORTANCE --> skipping this one
+WHATSOEVER --> skipping this one
+WITHIN --> skipping this one
+A --> skipping this one
+WEEt --> multiple matches (WEEK WEED ...)
+I --> skipping this one
+WAS --> skipping this one
+IN --> skipping this one
+THE --> skipping this one
+CAFETERIA --> skipping this one
+AND --> skipping this one
+SOME --> skipping this one
+GUY --> skipping this one
+FOOLING --> skipping this one
+AROUND --> skipping this one
+THROWS --> skipping this one
+A --> skipping this one
+PLATE --> skipping this one
+IN --> skipping this one
+THE --> skipping this one
+AIR --> skipping this one
+AS --> skipping this one
+THE --> skipping this one
+PLATE --> skipping this one
+WENT --> skipping this one
+UP --> skipping this one
+IN --> skipping this one
+THE --> skipping this one
+AIR --> skipping this one
+I --> skipping this one
+SAW --> skipping this one
+IT --> skipping this one
+WOBBLE --> skipping this one
+AND --> skipping this one
+I --> skipping this one
+NOTICED --> skipping this one
+THE --> skipping this one
+RED --> skipping this one
+MEDALLION --> skipping this one
+ON --> skipping this one
+THE --> skipping this one
+PLATE --> skipping this one
+GOING --> skipping this one
+AROUND --> skipping this one
+IT --> skipping this one
+WAS --> skipping this one
+PRETTY --> skipping this one
+OBVIOUS --> skipping this one
+TO --> skipping this one
+ME --> skipping this one
+THAT --> skipping this one
+IT --> skipping this one
+WENT --> skipping this one
+AROUND --> skipping this one
+FASTER --> skipping this one
+THAN --> skipping this one
+THE --> skipping this one
+WOBBLING --> skipping this one
+I --> skipping this one
+HAD --> skipping this one
+NOTHING --> skipping this one
+TO --> skipping this one
+DO --> skipping this one
+SO --> skipping this one
+I --> skipping this one
+START --> skipping this one
+TO --> skipping this one
+FIGURE --> skipping this one
+OUT --> skipping this one
+THE --> skipping this one
+MOTION --> skipping this one
+OF --> skipping this one
+THE --> skipping this one
+ROTATING --> skipping this one
+PLATE --> skipping this one
+I --> skipping this one
+DISCOVER --> skipping this one
+THAT --> skipping this one
+WHEN --> skipping this one
+THE --> skipping this one
+ANGLE --> skipping this one
+IS --> skipping this one
+VERY --> skipping this one
+SLIGHT --> skipping this one
+THE --> skipping this one
+MEDALLION --> skipping this one
+ROTATES --> skipping this one
+TWICE --> skipping this one
+AS --> skipping this one
+FAST --> skipping this one
+AS --> skipping this one
+THE --> skipping this one
+WOBBLE --> skipping this one
+RATE --> skipping this one
+TWO --> skipping this one
+TO --> skipping this one
+ONE --> skipping this one
+IT --> skipping this one
+CAME --> skipping this one
+OUT --> skipping this one
+OF --> skipping this one
+A --> skipping this one
+COMPLICATED --> skipping this one
+EaUATION --> unique match   equation
+  dc*: (A B C D E F G H I J K L M N O P Q R S T U V W X Y Z)
+       (w i s d o m n p q _ _ u v x y z a b c e f g h _ k _)
+Starting at the beginning of the word list:
+
+THEN --> skipping this one
+I --> skipping this one
+HAD --> skipping this one
+ANOTHER --> skipping this one
+THOUGHT --> skipping this one
+PHYSICS --> skipping this one
+DISGUSTS --> skipping this one
+ME --> skipping this one
+A --> skipping this one
+LITTLE --> skipping this one
+BIT --> skipping this one
+NOW --> skipping this one
+BUT --> skipping this one
+I --> skipping this one
+USED --> skipping this one
+TO --> skipping this one
+ENrOY --> multiple matches (ENJOY ENVOY ...)
+DOING --> skipping this one
+PHYSICS --> skipping this one
+WHY --> skipping this one
+DID --> skipping this one
+I --> skipping this one
+ENrOY --> multiple matches (ENJOY ENVOY ...)
+IT --> skipping this one
+I --> skipping this one
+USED --> skipping this one
+TO --> skipping this one
+PLAY --> skipping this one
+WITH --> skipping this one
+IT --> skipping this one
+I --> skipping this one
+USED --> skipping this one
+TO --> skipping this one
+DO --> skipping this one
+WHATEVER --> skipping this one
+I --> skipping this one
+FELT --> skipping this one
+LItE --> multiple matches (LIKE LIFE ...)
+DOING --> skipping this one
+IT --> skipping this one
+DID --> skipping this one
+NOT --> skipping this one
+HAVE --> skipping this one
+TO --> skipping this one
+DO --> skipping this one
+WITH --> skipping this one
+WHETHER --> skipping this one
+IT --> skipping this one
+WAS --> skipping this one
+IMPORTANT --> skipping this one
+FOR --> skipping this one
+THE --> skipping this one
+DEVELOPMENT --> skipping this one
+OF --> skipping this one
+NUCLEAR --> skipping this one
+PHYSICS --> skipping this one
+BUT --> skipping this one
+WHETHER --> skipping this one
+IT --> skipping this one
+WAS --> skipping this one
+INTERESTING --> skipping this one
+AND --> skipping this one
+AMUSING --> skipping this one
+FOR --> skipping this one
+ME --> skipping this one
+TO --> skipping this one
+PLAY --> skipping this one
+WITH --> skipping this one
+WHEN --> skipping this one
+I --> skipping this one
+WAS --> skipping this one
+IN --> skipping this one
+HIGH --> skipping this one
+SCHOOL --> skipping this one
+I --> skipping this one
+WOULD --> skipping this one
+SEE --> skipping this one
+WATER --> skipping this one
+RUNNING --> skipping this one
+OUT --> skipping this one
+OF --> skipping this one
+A --> skipping this one
+FAUCET --> skipping this one
+GROWING --> skipping this one
+NARROWER --> skipping this one
+AND --> skipping this one
+WONDER --> skipping this one
+IF --> skipping this one
+I --> skipping this one
+COULD --> skipping this one
+FIGURE --> skipping this one
+OUT --> skipping this one
+WHAT --> skipping this one
+DETERMINES --> skipping this one
+THAT --> skipping this one
+CURVE --> skipping this one
+I --> skipping this one
+FOUND --> skipping this one
+IT --> skipping this one
+WAS --> skipping this one
+RATHER --> skipping this one
+EASY --> skipping this one
+TO --> skipping this one
+DO --> skipping this one
+I --> skipping this one
+DID --> skipping this one
+NOT --> skipping this one
+HAVE --> skipping this one
+TO --> skipping this one
+DO --> skipping this one
+IT --> skipping this one
+IT --> skipping this one
+WAS --> skipping this one
+NOT --> skipping this one
+IMPORTANT --> skipping this one
+FOR --> skipping this one
+THE --> skipping this one
+FUTURE --> skipping this one
+OF --> skipping this one
+SCIENCE --> skipping this one
+SOMEBODY --> skipping this one
+ELSE --> skipping this one
+HAD --> skipping this one
+ALREADY --> skipping this one
+DONE --> skipping this one
+IT --> skipping this one
+THAT --> skipping this one
+DID --> skipping this one
+NOT --> skipping this one
+MAtE --> multiple matches (MADE MAKE ...)
+ANY --> skipping this one
+DIFFERENCE --> skipping this one
+I --> skipping this one
+WOULD --> skipping this one
+INVENT --> skipping this one
+THINGS --> skipping this one
+AND --> skipping this one
+PLAY --> skipping this one
+WITH --> skipping this one
+THINGS --> skipping this one
+FOR --> skipping this one
+MY --> skipping this one
+OWN --> skipping this one
+ENTERTAINMENT --> skipping this one
+SO --> skipping this one
+I --> skipping this one
+GOT --> skipping this one
+THIS --> skipping this one
+NEW --> skipping this one
+ATTITUDE --> skipping this one
+NOW --> skipping this one
+THAT --> skipping this one
+I --> skipping this one
+AM --> skipping this one
+BURNED --> skipping this one
+OUT --> skipping this one
+AND --> skipping this one
+I --> skipping this one
+WILL --> skipping this one
+NEVER --> skipping this one
+ACCOMPLISH --> skipping this one
+ANYTHING --> skipping this one
+I --> skipping this one
+HAVE --> skipping this one
+GOT --> skipping this one
+THIS --> skipping this one
+NICE --> skipping this one
+POSITION --> skipping this one
+AT --> skipping this one
+THE --> skipping this one
+UNIVERSITY --> skipping this one
+TEACHING --> skipping this one
+CLASSES --> skipping this one
+WHICH --> skipping this one
+I --> skipping this one
+RATHER --> skipping this one
+ENrOY --> multiple matches (ENJOY ENVOY ...)
+AND --> skipping this one
+rUST --> multiple matches (MUST JUST ...)
+LItE --> multiple matches (LIKE LIFE ...)
+I --> skipping this one
+READ --> skipping this one
+THE --> skipping this one
+ARABIAN --> skipping this one
+NIGHTS --> skipping this one
+FOR --> skipping this one
+PLEASURE --> skipping this one
+I --> skipping this one
+AM --> skipping this one
+GOING --> skipping this one
+TO --> skipping this one
+PLAY --> skipping this one
+WITH --> skipping this one
+PHYSICS --> skipping this one
+WHENEVER --> skipping this one
+I --> skipping this one
+WANT --> skipping this one
+TO --> skipping this one
+WITHOUT --> skipping this one
+WORRYING --> skipping this one
+ABOUT --> skipping this one
+ANY --> skipping this one
+IMPORTANCE --> skipping this one
+WHATSOEVER --> skipping this one
+WITHIN --> skipping this one
+A --> skipping this one
+WEEt --> multiple matches (WEEK WEED ...)
+I --> skipping this one
+WAS --> skipping this one
+IN --> skipping this one
+THE --> skipping this one
+CAFETERIA --> skipping this one
+AND --> skipping this one
+SOME --> skipping this one
+GUY --> skipping this one
+FOOLING --> skipping this one
+AROUND --> skipping this one
+THROWS --> skipping this one
+A --> skipping this one
+PLATE --> skipping this one
+IN --> skipping this one
+THE --> skipping this one
+AIR --> skipping this one
+AS --> skipping this one
+THE --> skipping this one
+PLATE --> skipping this one
+WENT --> skipping this one
+UP --> skipping this one
+IN --> skipping this one
+THE --> skipping this one
+AIR --> skipping this one
+I --> skipping this one
+SAW --> skipping this one
+IT --> skipping this one
+WOBBLE --> skipping this one
+AND --> skipping this one
+I --> skipping this one
+NOTICED --> skipping this one
+THE --> skipping this one
+RED --> skipping this one
+MEDALLION --> skipping this one
+ON --> skipping this one
+THE --> skipping this one
+PLATE --> skipping this one
+GOING --> skipping this one
+AROUND --> skipping this one
+IT --> skipping this one
+WAS --> skipping this one
+PRETTY --> skipping this one
+OBVIOUS --> skipping this one
+TO --> skipping this one
+ME --> skipping this one
+THAT --> skipping this one
+IT --> skipping this one
+WENT --> skipping this one
+AROUND --> skipping this one
+FASTER --> skipping this one
+THAN --> skipping this one
+THE --> skipping this one
+WOBBLING --> skipping this one
+I --> skipping this one
+HAD --> skipping this one
+NOTHING --> skipping this one
+TO --> skipping this one
+DO --> skipping this one
+SO --> skipping this one
+I --> skipping this one
+START --> skipping this one
+TO --> skipping this one
+FIGURE --> skipping this one
+OUT --> skipping this one
+THE --> skipping this one
+MOTION --> skipping this one
+OF --> skipping this one
+THE --> skipping this one
+ROTATING --> skipping this one
+PLATE --> skipping this one
+I --> skipping this one
+DISCOVER --> skipping this one
+THAT --> skipping this one
+WHEN --> skipping this one
+THE --> skipping this one
+ANGLE --> skipping this one
+IS --> skipping this one
+VERY --> skipping this one
+SLIGHT --> skipping this one
+THE --> skipping this one
+MEDALLION --> skipping this one
+ROTATES --> skipping this one
+TWICE --> skipping this one
+AS --> skipping this one
+FAST --> skipping this one
+AS --> skipping this one
+THE --> skipping this one
+WOBBLE --> skipping this one
+RATE --> skipping this one
+TWO --> skipping this one
+TO --> skipping this one
+ONE --> skipping this one
+IT --> skipping this one
+CAME --> skipping this one
+OUT --> skipping this one
+OF --> skipping this one
+A --> skipping this one
+COMPLICATED --> skipping this one
+EQUATION --> skipping this one
+THEN --> skipping this one
+I --> skipping this one
+THOUGHT --> skipping this one
+IS --> skipping this one
+THERE --> skipping this one
+SOME --> skipping this one
+WAY --> skipping this one
+I --> skipping this one
+CAN --> skipping this one
+SEE --> skipping this one
+IN --> skipping this one
+A --> skipping this one
+MORE --> skipping this one
+FUNDAMENTAL --> skipping this one
+WAY --> skipping this one
+BY --> skipping this one
+LOOtING --> multiple matches (LOOKING LOOMING ...)
+AT --> skipping this one
+THE --> skipping this one
+FORCES --> skipping this one
+OR --> skipping this one
+THE --> skipping this one
+DYNAMICS --> skipping this one
+WHY --> skipping this one
+IS --> skipping this one
+IT --> skipping this one
+TWO --> skipping this one
+TO --> skipping this one
+ONE --> skipping this one
+I --> skipping this one
+DO --> skipping this one
+NOT --> skipping this one
+REMEMBER --> skipping this one
+HOW --> skipping this one
+I --> skipping this one
+DID --> skipping this one
+IT --> skipping this one
+BUT --> skipping this one
+I --> skipping this one
+ULTIMATELY --> skipping this one
+WORtED --> multiple matches (WORKED WORDED ...)
+OUT --> skipping this one
+WHAT --> skipping this one
+THE --> skipping this one
+MOTION --> skipping this one
+OF --> skipping this one
+THE --> skipping this one
+MASS --> skipping this one
+PARTICLES --> skipping this one
+IS --> skipping this one
+AND --> skipping this one
+HOW --> skipping this one
+ALL --> skipping this one
+THE --> skipping this one
+ACCELERATIONS --> skipping this one
+BALANCE --> skipping this one
+TO --> skipping this one
+MAtE --> multiple matches (MADE MAKE ...)
+IT --> skipping this one
+COME --> skipping this one
+OUT --> skipping this one
+TWO --> skipping this one
+TO --> skipping this one
+ONE --> skipping this one
+I --> skipping this one
+STILL --> skipping this one
+REMEMBER --> skipping this one
+GOING --> skipping this one
+TO --> skipping this one
+A --> skipping this one
+SCIENTIST --> skipping this one
+AND --> skipping this one
+SAYING --> skipping this one
+HEY --> skipping this one
+I --> skipping this one
+NOTICED --> skipping this one
+SOMETHING --> skipping this one
+INTERESTING --> skipping this one
+HERE --> skipping this one
+THE --> skipping this one
+PLATE --> skipping this one
+GOES --> skipping this one
+AROUND --> skipping this one
+SO --> skipping this one
+AND --> skipping this one
+THE --> skipping this one
+REASON --> skipping this one
+IT --> skipping this one
+IS --> skipping this one
+TWO --> skipping this one
+TO --> skipping this one
+ONE --> skipping this one
+IS --> skipping this one
+AND --> skipping this one
+I --> skipping this one
+SHOWED --> skipping this one
+HIM --> skipping this one
+THE --> skipping this one
+ACCELERATIONS --> skipping this one
+HE --> skipping this one
+SAYS --> skipping this one
+THAT --> skipping this one
+IS --> skipping this one
+PRETTY --> skipping this one
+INTERESTING --> skipping this one
+BUT --> skipping this one
+WHAT --> skipping this one
+IS --> skipping this one
+THE --> skipping this one
+IMPORTANCE --> skipping this one
+OF --> skipping this one
+IT --> skipping this one
+WHY --> skipping this one
+ARE --> skipping this one
+YOU --> skipping this one
+DOING --> skipping this one
+IT --> skipping this one
+HAH --> skipping this one
+I --> skipping this one
+SAY --> skipping this one
+THERE --> skipping this one
+IS --> skipping this one
+NO --> skipping this one
+IMPORTANCE --> skipping this one
+WHATSOEVER --> skipping this one
+I --> skipping this one
+AM --> skipping this one
+rUST --> multiple matches (MUST JUST ...)
+DOING --> skipping this one
+IT --> skipping this one
+FOR --> skipping this one
+THE --> skipping this one
+FUN --> skipping this one
+OF --> skipping this one
+IT --> skipping this one
+HIS --> skipping this one
+REACTION --> skipping this one
+DID --> skipping this one
+NOT --> skipping this one
+DISCOURAGE --> skipping this one
+ME --> skipping this one
+I --> skipping this one
+HAD --> skipping this one
+MADE --> skipping this one
+UP --> skipping this one
+MY --> skipping this one
+MIND --> skipping this one
+I --> skipping this one
+WAS --> skipping this one
+GOING --> skipping this one
+TO --> skipping this one
+ENrOY --> multiple matches (ENJOY ENVOY ...)
+PHYSICS --> skipping this one
+AND --> skipping this one
+DO --> skipping this one
+WHATEVER --> skipping this one
+I --> skipping this one
+LItED --> multiple matches (LIVED LIKED ...)
+I --> skipping this one
+WENT --> skipping this one
+ON --> skipping this one
+TO --> skipping this one
+WORt --> multiple matches (WORK WORD ...)
+OUT --> skipping this one
+EQUATIONS --> skipping this one
+OF --> skipping this one
+WOBBLES --> skipping this one
+THEN --> skipping this one
+I --> skipping this one
+THOUGHT --> skipping this one
+ABOUT --> skipping this one
+HOW --> skipping this one
+ELECTRON --> skipping this one
+ORBITS --> skipping this one
+START --> skipping this one
+TO --> skipping this one
+MOVE --> skipping this one
+IN --> skipping this one
+RELATIVITY --> skipping this one
+THEN --> skipping this one
+THERE --> skipping this one
+IS --> skipping this one
+AN --> skipping this one
+QUATION --> skipping this one
+IN --> skipping this one
+ELECTRODYNAMICS --> skipping this one
+AND --> skipping this one
+THEN --> skipping this one
+QUANTUM --> skipping this one
+ELECTRODYNAMICS --> skipping this one
+AND --> skipping this one
+BEFORE --> skipping this one
+I --> skipping this one
+tNEW --> multiple matches (KNEW ANEW ...)
+IT --> skipping this one
+IT --> skipping this one
+WAS --> skipping this one
+A --> skipping this one
+VERY --> skipping this one
+SHORT --> skipping this one
+TIME --> skipping this one
+I --> skipping this one
+WAS --> skipping this one
+PLAYING --> skipping this one
+WORtING --> multiple matches (WORKING WORDING ...)
+REALLY --> skipping this one
+WITH --> skipping this one
+THE --> skipping this one
+SAME --> skipping this one
+OLD --> skipping this one
+PROBLEM --> skipping this one
+THAT --> skipping this one
+I --> skipping this one
+LOVED --> skipping this one
+SO --> skipping this one
+MUCH --> skipping this one
+THAT --> skipping this one
+I --> skipping this one
+HAD --> skipping this one
+STOPPED --> skipping this one
+WORtING --> multiple matches (WORKING WORDING ...)
+ON --> skipping this one
+WHEN --> skipping this one
+I --> skipping this one
+WENT --> skipping this one
+TO --> skipping this one
+LOS --> skipping this one
+ALAMOS --> skipping this one
+MY --> skipping this one
+THESIS --> skipping this one
+TYPE --> skipping this one
+PROBLEMS --> skipping this one
+ALL --> skipping this one
+THOSE --> skipping this one
+OLD --> skipping this one
+FASHIONED --> skipping this one
+WONDERFUL --> skipping this one
+THINGS --> skipping this one
+IT --> skipping this one
+WAS --> skipping this one
+EFFORTLESS --> skipping this one
+IT --> skipping this one
+WAS --> skipping this one
+EASY --> skipping this one
+TO --> skipping this one
+PLAY --> skipping this one
+WITH --> skipping this one
+THESE --> skipping this one
+THINGS --> skipping this one
+IT --> skipping this one
+WAS --> skipping this one
+LItE --> multiple matches (LIKE LIFE ...)
+UNCORtING --> unique match   uncorking
+  dc*: (A B C D E F G H I J K L M N O P Q R S T U V W X Y Z)
+       (w i s d o m n p q _ t u v x y z a b c e f g h _ k _)
+Starting at the beginning of the word list:
+
+THEN --> skipping this one
+I --> skipping this one
+HAD --> skipping this one
+ANOTHER --> skipping this one
+THOUGHT --> skipping this one
+PHYSICS --> skipping this one
+DISGUSTS --> skipping this one
+ME --> skipping this one
+A --> skipping this one
+LITTLE --> skipping this one
+BIT --> skipping this one
+NOW --> skipping this one
+BUT --> skipping this one
+I --> skipping this one
+USED --> skipping this one
+TO --> skipping this one
+ENrOY --> multiple matches (ENJOY ENVOY ...)
+DOING --> skipping this one
+PHYSICS --> skipping this one
+WHY --> skipping this one
+DID --> skipping this one
+I --> skipping this one
+ENrOY --> multiple matches (ENJOY ENVOY ...)
+IT --> skipping this one
+I --> skipping this one
+USED --> skipping this one
+TO --> skipping this one
+PLAY --> skipping this one
+WITH --> skipping this one
+IT --> skipping this one
+I --> skipping this one
+USED --> skipping this one
+TO --> skipping this one
+DO --> skipping this one
+WHATEVER --> skipping this one
+I --> skipping this one
+FELT --> skipping this one
+LIKE --> skipping this one
+DOING --> skipping this one
+IT --> skipping this one
+DID --> skipping this one
+NOT --> skipping this one
+HAVE --> skipping this one
+TO --> skipping this one
+DO --> skipping this one
+WITH --> skipping this one
+WHETHER --> skipping this one
+IT --> skipping this one
+WAS --> skipping this one
+IMPORTANT --> skipping this one
+FOR --> skipping this one
+THE --> skipping this one
+DEVELOPMENT --> skipping this one
+OF --> skipping this one
+NUCLEAR --> skipping this one
+PHYSICS --> skipping this one
+BUT --> skipping this one
+WHETHER --> skipping this one
+IT --> skipping this one
+WAS --> skipping this one
+INTERESTING --> skipping this one
+AND --> skipping this one
+AMUSING --> skipping this one
+FOR --> skipping this one
+ME --> skipping this one
+TO --> skipping this one
+PLAY --> skipping this one
+WITH --> skipping this one
+WHEN --> skipping this one
+I --> skipping this one
+WAS --> skipping this one
+IN --> skipping this one
+HIGH --> skipping this one
+SCHOOL --> skipping this one
+I --> skipping this one
+WOULD --> skipping this one
+SEE --> skipping this one
+WATER --> skipping this one
+RUNNING --> skipping this one
+OUT --> skipping this one
+OF --> skipping this one
+A --> skipping this one
+FAUCET --> skipping this one
+GROWING --> skipping this one
+NARROWER --> skipping this one
+AND --> skipping this one
+WONDER --> skipping this one
+IF --> skipping this one
+I --> skipping this one
+COULD --> skipping this one
+FIGURE --> skipping this one
+OUT --> skipping this one
+WHAT --> skipping this one
+DETERMINES --> skipping this one
+THAT --> skipping this one
+CURVE --> skipping this one
+I --> skipping this one
+FOUND --> skipping this one
+IT --> skipping this one
+WAS --> skipping this one
+RATHER --> skipping this one
+EASY --> skipping this one
+TO --> skipping this one
+DO --> skipping this one
+I --> skipping this one
+DID --> skipping this one
+NOT --> skipping this one
+HAVE --> skipping this one
+TO --> skipping this one
+DO --> skipping this one
+IT --> skipping this one
+IT --> skipping this one
+WAS --> skipping this one
+NOT --> skipping this one
+IMPORTANT --> skipping this one
+FOR --> skipping this one
+THE --> skipping this one
+FUTURE --> skipping this one
+OF --> skipping this one
+SCIENCE --> skipping this one
+SOMEBODY --> skipping this one
+ELSE --> skipping this one
+HAD --> skipping this one
+ALREADY --> skipping this one
+DONE --> skipping this one
+IT --> skipping this one
+THAT --> skipping this one
+DID --> skipping this one
+NOT --> skipping this one
+MAKE --> skipping this one
+ANY --> skipping this one
+DIFFERENCE --> skipping this one
+I --> skipping this one
+WOULD --> skipping this one
+INVENT --> skipping this one
+THINGS --> skipping this one
+AND --> skipping this one
+PLAY --> skipping this one
+WITH --> skipping this one
+THINGS --> skipping this one
+FOR --> skipping this one
+MY --> skipping this one
+OWN --> skipping this one
+ENTERTAINMENT --> skipping this one
+SO --> skipping this one
+I --> skipping this one
+GOT --> skipping this one
+THIS --> skipping this one
+NEW --> skipping this one
+ATTITUDE --> skipping this one
+NOW --> skipping this one
+THAT --> skipping this one
+I --> skipping this one
+AM --> skipping this one
+BURNED --> skipping this one
+OUT --> skipping this one
+AND --> skipping this one
+I --> skipping this one
+WILL --> skipping this one
+NEVER --> skipping this one
+ACCOMPLISH --> skipping this one
+ANYTHING --> skipping this one
+I --> skipping this one
+HAVE --> skipping this one
+GOT --> skipping this one
+THIS --> skipping this one
+NICE --> skipping this one
+POSITION --> skipping this one
+AT --> skipping this one
+THE --> skipping this one
+UNIVERSITY --> skipping this one
+TEACHING --> skipping this one
+CLASSES --> skipping this one
+WHICH --> skipping this one
+I --> skipping this one
+RATHER --> skipping this one
+ENrOY --> multiple matches (ENJOY ENVOY ...)
+AND --> skipping this one
+rUST --> multiple matches (MUST JUST ...)
+LIKE --> skipping this one
+I --> skipping this one
+READ --> skipping this one
+THE --> skipping this one
+ARABIAN --> skipping this one
+NIGHTS --> skipping this one
+FOR --> skipping this one
+PLEASURE --> skipping this one
+I --> skipping this one
+AM --> skipping this one
+GOING --> skipping this one
+TO --> skipping this one
+PLAY --> skipping this one
+WITH --> skipping this one
+PHYSICS --> skipping this one
+WHENEVER --> skipping this one
+I --> skipping this one
+WANT --> skipping this one
+TO --> skipping this one
+WITHOUT --> skipping this one
+WORRYING --> skipping this one
+ABOUT --> skipping this one
+ANY --> skipping this one
+IMPORTANCE --> skipping this one
+WHATSOEVER --> skipping this one
+WITHIN --> skipping this one
+A --> skipping this one
+WEEK --> skipping this one
+I --> skipping this one
+WAS --> skipping this one
+IN --> skipping this one
+THE --> skipping this one
+CAFETERIA --> skipping this one
+AND --> skipping this one
+SOME --> skipping this one
+GUY --> skipping this one
+FOOLING --> skipping this one
+AROUND --> skipping this one
+THROWS --> skipping this one
+A --> skipping this one
+PLATE --> skipping this one
+IN --> skipping this one
+THE --> skipping this one
+AIR --> skipping this one
+AS --> skipping this one
+THE --> skipping this one
+PLATE --> skipping this one
+WENT --> skipping this one
+UP --> skipping this one
+IN --> skipping this one
+THE --> skipping this one
+AIR --> skipping this one
+I --> skipping this one
+SAW --> skipping this one
+IT --> skipping this one
+WOBBLE --> skipping this one
+AND --> skipping this one
+I --> skipping this one
+NOTICED --> skipping this one
+THE --> skipping this one
+RED --> skipping this one
+MEDALLION --> skipping this one
+ON --> skipping this one
+THE --> skipping this one
+PLATE --> skipping this one
+GOING --> skipping this one
+AROUND --> skipping this one
+IT --> skipping this one
+WAS --> skipping this one
+PRETTY --> skipping this one
+OBVIOUS --> skipping this one
+TO --> skipping this one
+ME --> skipping this one
+THAT --> skipping this one
+IT --> skipping this one
+WENT --> skipping this one
+AROUND --> skipping this one
+FASTER --> skipping this one
+THAN --> skipping this one
+THE --> skipping this one
+WOBBLING --> skipping this one
+I --> skipping this one
+HAD --> skipping this one
+NOTHING --> skipping this one
+TO --> skipping this one
+DO --> skipping this one
+SO --> skipping this one
+I --> skipping this one
+START --> skipping this one
+TO --> skipping this one
+FIGURE --> skipping this one
+OUT --> skipping this one
+THE --> skipping this one
+MOTION --> skipping this one
+OF --> skipping this one
+THE --> skipping this one
+ROTATING --> skipping this one
+PLATE --> skipping this one
+I --> skipping this one
+DISCOVER --> skipping this one
+THAT --> skipping this one
+WHEN --> skipping this one
+THE --> skipping this one
+ANGLE --> skipping this one
+IS --> skipping this one
+VERY --> skipping this one
+SLIGHT --> skipping this one
+THE --> skipping this one
+MEDALLION --> skipping this one
+ROTATES --> skipping this one
+TWICE --> skipping this one
+AS --> skipping this one
+FAST --> skipping this one
+AS --> skipping this one
+THE --> skipping this one
+WOBBLE --> skipping this one
+RATE --> skipping this one
+TWO --> skipping this one
+TO --> skipping this one
+ONE --> skipping this one
+IT --> skipping this one
+CAME --> skipping this one
+OUT --> skipping this one
+OF --> skipping this one
+A --> skipping this one
+COMPLICATED --> skipping this one
+EQUATION --> skipping this one
+THEN --> skipping this one
+I --> skipping this one
+THOUGHT --> skipping this one
+IS --> skipping this one
+THERE --> skipping this one
+SOME --> skipping this one
+WAY --> skipping this one
+I --> skipping this one
+CAN --> skipping this one
+SEE --> skipping this one
+IN --> skipping this one
+A --> skipping this one
+MORE --> skipping this one
+FUNDAMENTAL --> skipping this one
+WAY --> skipping this one
+BY --> skipping this one
+LOOKING --> skipping this one
+AT --> skipping this one
+THE --> skipping this one
+FORCES --> skipping this one
+OR --> skipping this one
+THE --> skipping this one
+DYNAMICS --> skipping this one
+WHY --> skipping this one
+IS --> skipping this one
+IT --> skipping this one
+TWO --> skipping this one
+TO --> skipping this one
+ONE --> skipping this one
+I --> skipping this one
+DO --> skipping this one
+NOT --> skipping this one
+REMEMBER --> skipping this one
+HOW --> skipping this one
+I --> skipping this one
+DID --> skipping this one
+IT --> skipping this one
+BUT --> skipping this one
+I --> skipping this one
+ULTIMATELY --> skipping this one
+WORKED --> skipping this one
+OUT --> skipping this one
+WHAT --> skipping this one
+THE --> skipping this one
+MOTION --> skipping this one
+OF --> skipping this one
+THE --> skipping this one
+MASS --> skipping this one
+PARTICLES --> skipping this one
+IS --> skipping this one
+AND --> skipping this one
+HOW --> skipping this one
+ALL --> skipping this one
+THE --> skipping this one
+ACCELERATIONS --> skipping this one
+BALANCE --> skipping this one
+TO --> skipping this one
+MAKE --> skipping this one
+IT --> skipping this one
+COME --> skipping this one
+OUT --> skipping this one
+TWO --> skipping this one
+TO --> skipping this one
+ONE --> skipping this one
+I --> skipping this one
+STILL --> skipping this one
+REMEMBER --> skipping this one
+GOING --> skipping this one
+TO --> skipping this one
+A --> skipping this one
+SCIENTIST --> skipping this one
+AND --> skipping this one
+SAYING --> skipping this one
+HEY --> skipping this one
+I --> skipping this one
+NOTICED --> skipping this one
+SOMETHING --> skipping this one
+INTERESTING --> skipping this one
+HERE --> skipping this one
+THE --> skipping this one
+PLATE --> skipping this one
+GOES --> skipping this one
+AROUND --> skipping this one
+SO --> skipping this one
+AND --> skipping this one
+THE --> skipping this one
+REASON --> skipping this one
+IT --> skipping this one
+IS --> skipping this one
+TWO --> skipping this one
+TO --> skipping this one
+ONE --> skipping this one
+IS --> skipping this one
+AND --> skipping this one
+I --> skipping this one
+SHOWED --> skipping this one
+HIM --> skipping this one
+THE --> skipping this one
+ACCELERATIONS --> skipping this one
+HE --> skipping this one
+SAYS --> skipping this one
+THAT --> skipping this one
+IS --> skipping this one
+PRETTY --> skipping this one
+INTERESTING --> skipping this one
+BUT --> skipping this one
+WHAT --> skipping this one
+IS --> skipping this one
+THE --> skipping this one
+IMPORTANCE --> skipping this one
+OF --> skipping this one
+IT --> skipping this one
+WHY --> skipping this one
+ARE --> skipping this one
+YOU --> skipping this one
+DOING --> skipping this one
+IT --> skipping this one
+HAH --> skipping this one
+I --> skipping this one
+SAY --> skipping this one
+THERE --> skipping this one
+IS --> skipping this one
+NO --> skipping this one
+IMPORTANCE --> skipping this one
+WHATSOEVER --> skipping this one
+I --> skipping this one
+AM --> skipping this one
+rUST --> multiple matches (MUST JUST ...)
+DOING --> skipping this one
+IT --> skipping this one
+FOR --> skipping this one
+THE --> skipping this one
+FUN --> skipping this one
+OF --> skipping this one
+IT --> skipping this one
+HIS --> skipping this one
+REACTION --> skipping this one
+DID --> skipping this one
+NOT --> skipping this one
+DISCOURAGE --> skipping this one
+ME --> skipping this one
+I --> skipping this one
+HAD --> skipping this one
+MADE --> skipping this one
+UP --> skipping this one
+MY --> skipping this one
+MIND --> skipping this one
+I --> skipping this one
+WAS --> skipping this one
+GOING --> skipping this one
+TO --> skipping this one
+ENrOY --> multiple matches (ENJOY ENVOY ...)
+PHYSICS --> skipping this one
+AND --> skipping this one
+DO --> skipping this one
+WHATEVER --> skipping this one
+I --> skipping this one
+LIKED --> skipping this one
+I --> skipping this one
+WENT --> skipping this one
+ON --> skipping this one
+TO --> skipping this one
+WORK --> skipping this one
+OUT --> skipping this one
+EQUATIONS --> skipping this one
+OF --> skipping this one
+WOBBLES --> skipping this one
+THEN --> skipping this one
+I --> skipping this one
+THOUGHT --> skipping this one
+ABOUT --> skipping this one
+HOW --> skipping this one
+ELECTRON --> skipping this one
+ORBITS --> skipping this one
+START --> skipping this one
+TO --> skipping this one
+MOVE --> skipping this one
+IN --> skipping this one
+RELATIVITY --> skipping this one
+THEN --> skipping this one
+THERE --> skipping this one
+IS --> skipping this one
+AN --> skipping this one
+QUATION --> skipping this one
+IN --> skipping this one
+ELECTRODYNAMICS --> skipping this one
+AND --> skipping this one
+THEN --> skipping this one
+QUANTUM --> skipping this one
+ELECTRODYNAMICS --> skipping this one
+AND --> skipping this one
+BEFORE --> skipping this one
+I --> skipping this one
+KNEW --> skipping this one
+IT --> skipping this one
+IT --> skipping this one
+WAS --> skipping this one
+A --> skipping this one
+VERY --> skipping this one
+SHORT --> skipping this one
+TIME --> skipping this one
+I --> skipping this one
+WAS --> skipping this one
+PLAYING --> skipping this one
+WORKING --> skipping this one
+REALLY --> skipping this one
+WITH --> skipping this one
+THE --> skipping this one
+SAME --> skipping this one
+OLD --> skipping this one
+PROBLEM --> skipping this one
+THAT --> skipping this one
+I --> skipping this one
+LOVED --> skipping this one
+SO --> skipping this one
+MUCH --> skipping this one
+THAT --> skipping this one
+I --> skipping this one
+HAD --> skipping this one
+STOPPED --> skipping this one
+WORKING --> skipping this one
+ON --> skipping this one
+WHEN --> skipping this one
+I --> skipping this one
+WENT --> skipping this one
+TO --> skipping this one
+LOS --> skipping this one
+ALAMOS --> skipping this one
+MY --> skipping this one
+THESIS --> skipping this one
+TYPE --> skipping this one
+PROBLEMS --> skipping this one
+ALL --> skipping this one
+THOSE --> skipping this one
+OLD --> skipping this one
+FASHIONED --> skipping this one
+WONDERFUL --> skipping this one
+THINGS --> skipping this one
+IT --> skipping this one
+WAS --> skipping this one
+EFFORTLESS --> skipping this one
+IT --> skipping this one
+WAS --> skipping this one
+EASY --> skipping this one
+TO --> skipping this one
+PLAY --> skipping this one
+WITH --> skipping this one
+THESE --> skipping this one
+THINGS --> skipping this one
+IT --> skipping this one
+WAS --> skipping this one
+LIKE --> skipping this one
+UNCORKING --> skipping this one
+A --> skipping this one
+BOTTLE --> skipping this one
+EVERYTHING --> skipping this one
+FLOWED --> skipping this one
+OUT --> skipping this one
+EFFORTLESSLY --> skipping this one
+I --> skipping this one
+ALMOST --> skipping this one
+TRIED --> skipping this one
+TO --> skipping this one
+RESIST --> skipping this one
+IT --> skipping this one
+THERE --> skipping this one
+WAS --> skipping this one
+NO --> skipping this one
+IMPORTANCE --> skipping this one
+TO --> skipping this one
+WHAT --> skipping this one
+I --> skipping this one
+WAS --> skipping this one
+DOING --> skipping this one
+BUT --> skipping this one
+ULTIMATELY --> skipping this one
+THERE --> skipping this one
+WAS --> skipping this one
+THE --> skipping this one
+DIAGRAMS --> skipping this one
+AND --> skipping this one
+THE --> skipping this one
+WHOLE --> skipping this one
+BUSINESS --> skipping this one
+THAT --> skipping this one
+I --> skipping this one
+GOT --> skipping this one
+THE --> skipping this one
+NOBEL --> skipping this one
+PRIlE --> multiple matches (PRICE PRIME ...)
+FOR --> skipping this one
+CAME --> skipping this one
+FROM --> skipping this one
+THAT --> skipping this one
+PIDDLING --> skipping this one
+AROUND --> skipping this one
+WITH --> skipping this one
+THE --> skipping this one
+WOBBLING --> skipping this one
+PLATE --> skipping this one
+  swe: potential consistent candidates: (wisdom)
+  swe: completed key found!
+  swe: secret-word is wisdom
+(A B C D E F G H I J K L M N O P Q R S T U V W X Y Z)
+(w i s d o m n p q r t u v x y z a b c e f g h j k l)
+(w i s d o m n p q r t u v x y z a b c e f g h j k l)

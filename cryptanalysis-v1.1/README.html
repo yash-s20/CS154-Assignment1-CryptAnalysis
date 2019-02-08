@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="/home/ananya/.emacs.d/github-markdown.css">
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="cs152-assignemnt-1---cryptanalysis">CS152 Assignemnt 1 - Cryptanalysis</h1>
+<p><strong>Student repository</strong></p>
+<p>The problem statement is in the accompanying <code>.pdf</code>. This document is to inform you concretely about what is expected in your submission and some tips on how to navigate the various modules in here. We also detail how to make use of the sample implementation.</p>
+<p>Make sure you follow the crisp instructions below to help us automatically grade your submission. <strong>Most importantly do not commit plagiarism. See distinction between plagiarism and discussion <a href="https://www.cse.iitb.ac.in/~supratik/courses/copying-and-discussion.html">here</a></strong>.</p>
+<p>The assignment essentially requires you to implement <code>dictionary-closure</code>, <code>secret-word-enumeration</code>, some statistical analysis functions, and a driver function: <code>crack-cipher</code>.</p>
+<h1 id="instructions">Instructions</h1>
+<ol>
+<li>EDIT:
+<ul>
+<li>main.rkt</li>
+<li>dict-closure.rkt</li>
+<li>statistics.rkt</li>
+<li>strategies.rkt</li>
+</ul></li>
+<li>DO NOT EDIT:
+<ul>
+<li>utils.rkt</li>
+</ul></li>
+<li><code>crack-cipher</code> in main.rkt should implicitly use <code>utils:ciphertext</code> and <code>utils:cipher-word-list</code>.</li>
+<li>For the function skeletons we provide,
+<ul>
+<li>do not change the arguments,</li>
+<li>add or reduce arguments,</li>
+<li>remove them.</li>
+</ul></li>
+<li>Make sure you take a look at the utilities in <code>utils.rkt</code>, before starting the assignment.</li>
+<li>Each module has instructions or some text to guide you.</li>
+<li>Keep your code nicely indented and documented, if you wish to get any partial credits. This requires conscious effort and takes up time - pace your work well!</li>
+<li>You are free to add more modules to your submission. They must be implemented by you. You must <code>require</code> <code>utils.rkt</code> in your new module.</li>
+<li>Make use of built-in racket functions as much as you can. Why re-invent the wheel? Getting good at reading docs is a valuable skill.</li>
+<li>Detailed submission instructions will be intimated on Moodle later!</li>
+</ol>
+<h2 id="faqs">FAQs</h2>
+<ol>
+<li>I can't wrap my head around the <code>prefix-in</code> business.
+<ul>
+<li><code>require</code> imports all top-level functions. The <code>prefix-in</code> adds a prefix, to group them. This allows you to define functions with the same name in different modules without name clashes. More importantly, it clearly indicates where this function was imported from, making your code more readable.</li>
+</ul></li>
+<li>What should I start with?
+<ul>
+<li>We recommend that you begin with the statistics module and then a dumb <code>etai</code> strategy. At this point you can start working on <code>crack-cipher</code>.</li>
+<li>Add in <code>dictionary-closure</code>, improving the strategy, and <code>secret-word-enumeration</code> incrementally. Don't try to do everything at once.</li>
+</ul></li>
+<li>How will you grade my submission?
+<ul>
+<li><p>We'll replace <code>utils.rkt</code> with our own (which has strictly more functions than the one we've provided).</p></li>
+<li><p><del>We won't run your <code>main.rkt</code>, just require <code>crack-cipher</code> from your <code>main.rkt</code> (and other functions of interest from resp. modules) into our test-script.</del></p>
+<p><strong>Will be intimated later.</strong></p></li>
+</ul></li>
+<li>Any tips for an additional module that I'm including in my submission?
+<ul>
+<li>Yes! See point 8 in &quot;Instructions&quot;</li>
+</ul></li>
+<li>I think I found a bug in the starter kit or demo application.
+<ul>
+<li>Please report it on a Moodle thread.</li>
+</ul></li>
+</ol>
+<h1 id="using-the-sample-implementation">Using the sample implementation</h1>
+<h1 id="references">References</h1>
+<ul>
+<li>Simon Singh's <a href="http://www.simonsingh.net/The_Black_Chamber/chamberguide.html" title="The
+BLACK Chamber">supplementary website</a> with some hints on cryptanalysis.</li>
+<li>Another good source of strategies and generic approaches on <a href="http://practicalcryptography.com/cryptanalysis/">Practical Cryptography</a>.</li>
+<li>We've sourced words (ie, dictionary), and statistics from <a href="http://norvig.com/mayzner.html">Peter Norvig's works</a>.</li>
+<li>A <a href="https://www.guballa.de/vigenere-solver">fun tool</a> on a different cipher scheme.</li>
+</ul>
+<hr />
+<p>Hope you enjoy doing this assignment as much as we did making it!</p>
+<p>Best luck!</p>
+</body>
+</html>
