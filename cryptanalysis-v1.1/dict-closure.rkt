@@ -42,24 +42,54 @@
 (define (dictionary-closure key)
   (define (decrypt-partial key cipher-list)
     (map (λ(x) (utils:decrypt key x)) cipher-list))
-   ; (if (null? cipher-list) '()
-    ;(let ([word (utils:decrypt key (car cipher-list))])
-     ; (cons word (closure-helper key (cdr cipher-list))))))
   (define partial-plain-text (decrypt-partial key utils:cipher-word-list))
   (define (find-for-each-word ppt)
     (match ppt
       ['() key]
       [(cons a b)
        #:when (decrypted-word? a)
+       ;(begin
+        ; (display a)
+         ;(displayln " <- skipping this one")
        (find-for-each-word b)] ;; word already decrypted
-      [(cons word b) (cond [(and (unique-completion? word) (utils:is-monoalphabetic? (substitution word (find-match word))))
-                            (dictionary-closure (utils:add-substitution (substitution word (find-match word)) key))] ;;recurse or a new more complete key
-                           [(multiple-completion? word) (find-for-each-word b)] ;; no information to extract
-                           [(no-completion? word) #f])] ;;this means this key is incorrect
-      ))
+      [(cons word b)
+       (match (completion word)
+         [#f #f]; key is incorrect
+         [#t ;(begin
+               ;(display word)
+               ;(displayln " <- multiple matches right now")
+               (find-for-each-word b)] ;; multiple matches right now
+         [w (match (substitution word w)
+              [x (if (utils:is-monoalphabetic? x key)
+                     ;(begin
+                      ; (display word)
+                       ;(display " <--> ")
+                       ;(display w)
+                       ;(displayln "... MATCH!")
+                       (dictionary-closure (utils:add-substitution x key)) #f)])])]))
+                
+       ;(cond [(and (completion word) (utils:is-monoalphabetic? (substitution word (completion word))))
+         ;                   (dictionary-closure (utils:add-substitution (substitution word (completion word)) key))] ;;recurse or a new more complete key
+          ;                 [(completion word) (find-for-each-word b)] ;; no information to extract
+           ;                [(completion word) #f])] ;;this means this key is incorrect
   (find-for-each-word partial-plain-text))
-      
-(define (substitution partial dict-word) 0)
+
+(define (completion word)
+  ; returns
+  ; 1. a #f if there is no completion
+  ; 2. a #t if there are multiple completion
+  ; 3. a word from the dictionary if unique
+  (foldr (λ(dict-word rest)
+           (match rest
+             [#f (if (match-char-list (string->list word) (string->list dict-word)) dict-word #f)]
+             [#t #t]
+             [w (if (match-char-list (string->list word) (string->list dict-word)) #t w)])) #f utils:dictionary))
+
+(define (substitution partial dict-word) ; a list of pair of subsitution, plaintext char to upper text char
+  (filter (λ(p) (lower? (cdr p))) (map (λ (x y) (cons y x)) (string->list partial) (string->list dict-word))))
+
+
+
 (define (decrypted-word? word)
   (foldr (λ(x y) (and (not (lower? x)) y)) #t (string->list word)))
 (define (lower? char)
