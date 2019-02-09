@@ -3,6 +3,7 @@
 ;; You can require more modules of your choice.
 (require racket/list
          racket/string
+         racket/match
          (prefix-in utils: "utils.rkt"))
 
 (provide dictionary-closure)
@@ -39,8 +40,36 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (define (dictionary-closure key)
-  (define (closure-helper key cipher-list)
-    (if (null? cipher-list) '()
-    (let ([word (utils:decrypt key (car cipher-list))])
-      (cons word (closure-helper key (cdr cipher-list))))))
-  (closure-helper key utils:cipher-word-list))
+  (define (decrypt-partial key cipher-list)
+    (map (λ(x) (utils:decrypt key x)) cipher-list))
+   ; (if (null? cipher-list) '()
+    ;(let ([word (utils:decrypt key (car cipher-list))])
+     ; (cons word (closure-helper key (cdr cipher-list))))))
+  (define partial-plain-text (decrypt-partial key utils:cipher-word-list))
+  (define (find-for-each-word ppt)
+    (match ppt
+      ['() key]
+      [(cons a b)
+       #:when (decrypted-word? a)
+       (find-for-each-word b)] ;; word already decrypted
+      [(cons word b) (cond [(and (unique-completion? word) (utils:is-monoalphabetic? (substitution word (find-match word))))
+                            (dictionary-closure (utils:add-substitution (substitution word (find-match word)) key))] ;;recurse or a new more complete key
+                           [(multiple-completion? word) (find-for-each-word b)] ;; no information to extract
+                           [(no-completion? word) #f])] ;;this means this key is incorrect
+      ))
+  (find-for-each-word partial-plain-text))
+      
+(define (substitution partial dict-word) 0)
+(define (decrypted-word? word)
+  (foldr (λ(x y) (and (not (lower? x)) y)) #t (string->list word)))
+(define (lower? char)
+  (and (< (char->integer char) 123) (> (char->integer char) 96)))
+
+(define (match-char-list plain-partial dict-word)
+  (match (cons plain-partial dict-word)
+    [(cons '() '()) #t]
+    [(cons '() _) #f]
+    [(cons _ '()) #f]
+    [(cons (cons a b) (cons c d)) (cond [(lower? a) (match-char-list b d)]
+                                        [(eq? a c) (match-char-list b d)]
+                                        [else #f])]))

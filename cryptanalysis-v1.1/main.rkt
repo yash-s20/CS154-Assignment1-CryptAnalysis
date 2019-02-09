@@ -130,5 +130,7 @@
   ;; DISPLAY A KEY AS SOON AS YOU FIND IT USING (show-key key)
   (list key))
 
+
+;; my testing
 (define key2 (utils:encryption-key "wisdom"))
 (set! key2 (cons #\_ (cons #\_ (cddr key2))))
