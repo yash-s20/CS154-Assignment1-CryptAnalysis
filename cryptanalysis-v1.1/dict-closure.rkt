@@ -48,25 +48,27 @@
       ['() key]
       [(cons a b)
        #:when (decrypted-word? a)
-       ;(begin
-        ; (display a)
-         ;(displayln " <- skipping this one")
-       (find-for-each-word b)] ;; word already decrypted
+       (begin
+         (display a)
+         (displayln " <- skipping this one")
+       (find-for-each-word b))] ;; word already decrypted
       [(cons word b)
        (match (completion word)
          [#f #f]; key is incorrect
-         [#t ;(begin
-               ;(display word)
-               ;(displayln " <- multiple matches right now")
-               (find-for-each-word b)] ;; multiple matches right now
+         [#t (begin
+               (display word)
+               (displayln " <- multiple matches right now")
+               (find-for-each-word b))] ;; multiple matches right now
          [w (match (substitution word w)
               [x (if (utils:is-monoalphabetic? x key)
-                     ;(begin
-                      ; (display word)
-                       ;(display " <--> ")
-                       ;(display w)
-                       ;(displayln "... MATCH!")
-                       (dictionary-closure (utils:add-substitution x key)) #f)])])]))
+                     (begin
+                       (display word)
+                       (display " <--> ")
+                       (display w)
+                       (displayln "... MATCH!")
+                       (dictionary-closure (utils:add-substitution x key))) (begin
+                                                                              (display word)
+                                                                              (displayln " <- No match found") #f))])])]))
                 
        ;(cond [(and (completion word) (utils:is-monoalphabetic? (substitution word (completion word))))
          ;                   (dictionary-closure (utils:add-substitution (substitution word (completion word)) key))] ;;recurse or a new more complete key
@@ -86,7 +88,7 @@
              [w (if (match-char-list (string->list word) (string->list dict-word)) #t w)])) #f utils:dictionary))
 
 (define (substitution partial dict-word) ; a list of pair of subsitution, plaintext char to upper text char
-  (filter (λ(p) (lower? (cdr p))) (map (λ (x y) (cons y x)) (string->list partial) (string->list dict-word))))
+  (remove-duplicates (filter (λ(p) (lower? (cdr p))) (map (λ (x y) (cons y x)) (string->list partial) (string->list dict-word)))))
 
 
 
@@ -101,5 +103,5 @@
     [(cons '() _) #f]
     [(cons _ '()) #f]
     [(cons (cons a b) (cons c d)) (cond [(lower? a) (match-char-list b d)]
-                                        [(eq? a c) (match-char-list b d)]
+                                        [(equal? a c) (match-char-list b d)]
                                         [else #f])]))

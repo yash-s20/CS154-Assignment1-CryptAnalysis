@@ -133,4 +133,4 @@
 
 ;; my testing
 (define key2 (utils:encryption-key "wisdom"))
-(set! key2 (cons #\_ (cons #\_ (cddr key2))))
+(set! key2 (cons #\_ (cons #\_ (cons #\_ (cons #\_ (cons #\_ (cons #\_ (cddr (cddr (cddr key2))))))))))
