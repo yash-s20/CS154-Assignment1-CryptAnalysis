@@ -2,6 +2,7 @@
 
 ;; You can require more modules of your choice.
 (require racket/list
+         racket/match
          racket/string
          (prefix-in utils: "utils.rkt"))
 
@@ -43,8 +44,26 @@
          ;; my-fundoo-analysis
          )
 
+;;sort a list in decreasing order of frequencies
+(define (sort-and-set word-list)
+  (define (sort-helper w-l s)
+    (define (insert elem s acc)
+      (match s
+        ['() (reverse (cons elem acc))]
+        [(cons a b)
+         (if (> (cdr a) (cdr elem)) (insert elem b (cons a acc))
+             (append (reverse (cons elem acc)) s))]))
+    (match w-l
+      ['() s]
+      [(cons a b) (let ([c (count (λ(x) (equal? x a)) w-l)]
+                        [rest (filter (λ(x) (not (equal? x a))) w-l)])
+                    (sort-helper rest (insert (cons a c) s '())))]))
+  (map car (sort-helper word-list '())))
+
 ;; Takes ciphertext and produces a list of cipher chars sorted in decreasing
 ;; order of frequency.
+
+
 (define (is-character? a)
   (and (> (char->integer a) 96) (< (char->integer a) 123)))
 
@@ -125,13 +144,17 @@
 
 ;; Takes the cipher word list and produces a list of single letter words, sorted
 ;; in decreasing order of frequency. Each element must be a string!
+
+
 (define (cipher-common-words-single cipher-word-list)
-  '())
+  (let ([single-words-list (filter (λ(x) (= (length (string->list x)) 1)) cipher-word-list)])
+    (sort-and-set single-words-list)))
 
 ;; Takes the cipher word list and produces a list of double letter words, sorted
 ;; in decreasing order of frequency.
 (define (cipher-common-words-double cipher-word-list)
-  '())
+  (let ([double-words-list (filter (λ(x) (= (length (string->list x)) 2)) cipher-word-list)])
+    (sort-and-set double-words-list)))
 
 ;; Takes the cipher word list and produces a list of triple letter words, sorted
 ;; in decreasing order of frequency.
