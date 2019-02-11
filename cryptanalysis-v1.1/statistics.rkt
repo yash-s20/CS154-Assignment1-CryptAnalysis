@@ -82,7 +82,7 @@
                [rest (filter (λ(x) (not ((is-char-this that-char) x))) filtered)])
           (insert that-char c (monogram-helper rest))))) 
   (let ([filtered-cipher (filter is-character? (string->list ciphertext))])
-    (map (λ(x) (car x)) (monogram-helper filtered-cipher))))
+    (map car (monogram-helper filtered-cipher))))
     
 
 
