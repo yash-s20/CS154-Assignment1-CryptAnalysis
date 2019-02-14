@@ -2,6 +2,7 @@
 
 ;; You can require more modules of your choice.
 (require racket/list
+	 "list-comprehension.rkt"
          (prefix-in utils: "utils.rkt")
          (prefix-in stats: "statistics.rkt"))
 
@@ -77,10 +78,62 @@
 ;; substitutions for E, T, A and I.
 ;; Refer the assignment manual for tips on developing this strategy. You can
 ;; interact with our etai with the executable we provide.
+(define etai-list (list #\E #\T #\A #\I))
+
+
+(define (etai-mapping subs)
+  (map (lambda(x y) (cons x y)) etai-list subs))
+
+(define (atmost-a-from-l a l)
+  (cond [(= a 0) '(())]
+	[(>= a (length l)) (list l)]
+	[else (append (map (lambda(x) (cons (car l) x)) (atmost-a-from-l (- a 1) (cdr l))) (atmost-a-from-l a (cdr l)))]))
+
+(define (first-b b l)
+  (define (f-helper b l acc-f)
+    (if (= b 0) (acc-f '())
+	(f-helper (- b 1) (cdr l) (lambda (x) (acc-f (cons (car l) x))))))
+  (f-helper b l (lambda(x) x)))
+
+(define (a-from-first-b l a b)
+  (atmost-a-from-l a (first-b b l)))
+
+
+(define most-unique-neighbours
+  (stats:cipher-unique-neighbourhood
+   (stats:cipher-bigrams utils:cipher-word-list)
+   'both))
+
+(define (permute-ai singles)
+  (cons singles (list (reverse singles))))
+
+(define (combination-et monograms singles)
+  (a-from-first-b (filter (lambda(x) (not (member x singles))) monograms) 2 5))
+
+;; permute-et gives the better order of permutation of e and t according to neighbours
+(define (permute-et combinations)
+  (define (permute-each combination)
+    (define (permute-helper combination char-list)
+      (match (cons combination char-list)
+	[(cons (list a b c ...) (cons a rest)) (list (list a b) (list b a))]
+	[(cons (list a b c ...) (cons b rest)) (list (list b a) (list a b))]
+	[(cons _ (cons a l)) (permute-helper combination l)]))
+    (permute-helper combination (map car most-unique-neighbours)))
+  (append* (map permute-each combinations)))
+
 (define (monogram-mapping monograms)
   (list (list (cons #\A (car monograms)) (cons #\I (cadr monograms))) (list (cons #\A (cadr monograms)) (cons #\I (car monograms)))))
 
-(define (etai key) '(()))
+(define (etai key)
+  (let* ([monos (stats:cipher-monograms utils:ciphertext)]
+	 [singles (map (lambda(x) (car (string->list x)))
+		       (stats:cipher-common-words-single utils:cipher-word-list))]
+	 [comb-et (combination-et monos singles)]
+	 [perm-ai (permute-ai singles)]
+	 [perm-et (permute-et comb-et)])
+    (filter (lambda(x) (utils:is-monoalphabetic? x key))
+	    (lc (etai-mapping (append x y)) : x <- perm-et y <- perm-ai))))
+	 
   ;(list (list (cons #\E #\o) (cons #\T #\e) (cons #\A #\w) (cons #\I #\q))))
 
 ;; A suggested composition of strategies that might work well. Has not been

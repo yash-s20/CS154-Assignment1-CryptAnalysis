@@ -25,6 +25,8 @@
 ;;                                                                                 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+
+;(cipher-common-words-single utils:cipher-word-list)
 ;; Analyses
 (provide cipher-monograms
          cipher-bigrams
@@ -79,7 +81,7 @@
     (if (null? filtered) '()
         (let* ([that-char (car filtered)]
                [c (count (is-char-this that-char) filtered)]
-             [rest (filter (lambda(x) (not ((is-char-this that-char) x))) filtered)])
+               [rest (filter (lambda(x) (not ((is-char-this that-char) x))) filtered)])
           (insert that-char c (monogram-helper rest))))) 
 
   (let ([filtered-cipher (filter is-character? (string->list ciphertext))])
@@ -91,13 +93,13 @@
 ;; sorted in decreasing order of frequency. Each element must be a string!
 
 (define (cipher-bigrams cipher-word-list)
+  (define (word-bigrams w-l acc)
+    (match w-l
+      [(cons a '()) acc]
+      [(cons a (cons b c)) (word-bigrams (cons b c) (cons (list->string (list a b)) acc))]))
   (map car (sort-and-set (append* (map (lambda(word) (word-bigrams (string->list word) '())) cipher-word-list)))))
 
 
-(define (word-bigrams w-l acc)
-  (match w-l
-    [(cons a '()) acc]
-    [(cons a (cons b c)) (word-bigrams (cons b c) (cons (list->string (list a b)) acc))]))
 ;; Takes the bigram frequency order (output of `cipher-bigrams`) and computes
 ;; the neighbourhood of each letter with every other letter. Only unique
 ;; neighbours are to be counted.
@@ -135,8 +137,8 @@
                 ['successor successor]
                 ['both both])])
     (sort-and-set (append* (map
-              filt
-              cipher-bigrams-list)))))
+			    filt
+			    cipher-bigrams-list)))))
 
 ;; Takes the bigram frequency order (output of `cipher-bigrams`) and computes
 ;; the neighbourhood of each letter with every other letter, but counts each

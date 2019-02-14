@@ -56,6 +56,8 @@
 (define (correct-key? partial-key complete-key)
   (match (cons partial-key complete-key)
     [(cons '() '()) #t]
+    [(cons _ '()) #f]
+    [(cons '() _) #f]
     [(cons (cons #\_ rest-part) (cons _ rest-full)) (correct-key? rest-part rest-full)]
     [(cons (cons a rest-part) (cons a rest-full)) (correct-key? rest-part rest-full)]
     [(cons (cons a _) (cons b _)) #f]))
@@ -64,9 +66,13 @@
   (foldr (lambda(x y)
            (let ([key-this-word (utils:encryption-key x)]
                  [nothing-after? (equal? key-after-dictionary-closure y)])
-             (cond [(and (correct-key? key-after-dictionary-closure key-this-word) nothing-after?) key-this-word]
+             (cond [(and (correct-key? key-after-dictionary-closure key-this-word) nothing-after?) (begin
+                                                                                                     (utils:show-key key-this-word)
+                                                                                                     key-this-word)]
                    [(not y) y]
-                   [(correct-key? key-after-dictionary-closure key-this-word) #f]
+                   [(correct-key? key-after-dictionary-closure key-this-word) (begin
+                                                                                (displayln "swe: #f")
+                                                                                #f)]
                    [(not nothing-after?) y]
                    [else key-after-dictionary-closure]))) key-after-dictionary-closure possible-secret-list))
 
