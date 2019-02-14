@@ -243,3 +243,4 @@
   ;; it cannot be represented in a fixed amount of memory
   ;; thus a sanitation step is necessary.
   (regexp-match* (pregexp "\\w+") (sanitize-text cipher-text)))
+

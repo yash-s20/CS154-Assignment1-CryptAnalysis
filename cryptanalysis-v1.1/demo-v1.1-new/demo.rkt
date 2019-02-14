@@ -17,7 +17,6 @@
       key
       (fuzz-key (sub1 iters) (list-set key (random 26) #\_))))
 
-
 (define key (build-list 26 (lambda (_) #\_)))
 
 ;; You can experiment with the following functions in here:

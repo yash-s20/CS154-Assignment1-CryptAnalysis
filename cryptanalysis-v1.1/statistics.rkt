@@ -55,8 +55,8 @@
              (append (reverse (cons elem acc)) s))]))
     (match w-l
       ['() s]
-      [(cons a b) (let ([c (count (λ(x) (equal? x a)) w-l)]
-                        [rest (filter (λ(x) (not (equal? x a))) w-l)])
+      [(cons a b) (let ([c (count (lambda(x) (equal? x a)) w-l)]
+                        [rest (filter (lambda(x) (not (equal? x a))) w-l)])
                     (sort-helper rest (insert (cons a c) s '())))]))
   (map car (sort-helper word-list '())))
 
@@ -69,7 +69,7 @@
 
 (define (cipher-monograms ciphertext)
   (define (is-char-this a)
-    (λ(x) (equal? a x)))
+    (lambda(x) (equal? a x)))
   (define (insert char cnt l)
     (cond [(null? l) (list (cons char cnt))]
           [(> (cdar l) cnt) (cons (car l) (insert char cnt (cdr l)))]
@@ -79,8 +79,9 @@
     (if (null? filtered) '()
         (let* ([that-char (car filtered)]
                [c (count (is-char-this that-char) filtered)]
-               [rest (filter (λ(x) (not ((is-char-this that-char) x))) filtered)])
+               [rest (filter (lambda(x) (not ((is-char-this that-char) x))) filtered)])
           (insert that-char c (monogram-helper rest))))) 
+
   (let ([filtered-cipher (filter is-character? (string->list ciphertext))])
     (map car (monogram-helper filtered-cipher))))
     
@@ -147,13 +148,13 @@
 
 
 (define (cipher-common-words-single cipher-word-list)
-  (let ([single-words-list (filter (λ(x) (= (length (string->list x)) 1)) cipher-word-list)])
+  (let ([single-words-list (filter (lambda(x) (= (length (string->list x)) 1)) cipher-word-list)])
     (sort-and-set single-words-list)))
 
 ;; Takes the cipher word list and produces a list of double letter words, sorted
 ;; in decreasing order of frequency.
 (define (cipher-common-words-double cipher-word-list)
-  (let ([double-words-list (filter (λ(x) (= (length (string->list x)) 2)) cipher-word-list)])
+  (let ([double-words-list (filter (lambda(x) (= (length (string->list x)) 2)) cipher-word-list)])
     (sort-and-set double-words-list)))
 
 ;; Takes the cipher word list and produces a list of triple letter words, sorted

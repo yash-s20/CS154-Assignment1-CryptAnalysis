@@ -46,7 +46,7 @@
   (and (= 6 (length word)) (unique? word)))
 
 (define (six-letter-words dict)
-  (foldr (λ (x y)
+  (foldr (lambda (x y)
            (if (candidate? (string->list x))
                (cons (word-to-lower x) y)
                y))
@@ -61,12 +61,10 @@
     [(cons (cons a _) (cons b _)) #f]))
 
 (define (secret-word-enumeration key-after-dictionary-closure) ;; Returns a key or false (#f)
-  (foldr (λ(x y)
+  (foldr (lambda(x y)
            (let ([key-this-word (utils:encryption-key x)]
                  [nothing-after? (equal? key-after-dictionary-closure y)])
-             (cond [(and (correct-key? key-after-dictionary-closure key-this-word) nothing-after?) (begin
-                                                                                                     (displayln key-this-word)
-                                                                                                     key-this-word)]
+             (cond [(and (correct-key? key-after-dictionary-closure key-this-word) nothing-after?) key-this-word]
                    [(not y) y]
                    [(correct-key? key-after-dictionary-closure key-this-word) #f]
                    [(not nothing-after?) y]

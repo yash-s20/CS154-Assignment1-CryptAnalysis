@@ -41,7 +41,7 @@
 
 (define (dictionary-closure key)
   (define (decrypt-partial key cipher-list)
-    (map (λ(x) (utils:decrypt key x)) cipher-list))
+    (map (lambda(x) (utils:decrypt key x)) cipher-list))
   (define partial-plain-text (decrypt-partial key utils:cipher-word-list))
   (define (find-for-each-word ppt)
     (match ppt
@@ -81,19 +81,19 @@
   ; 1. a #f if there is no completion
   ; 2. a #t if there are multiple completion
   ; 3. a word from the dictionary if unique
-  (foldr (λ(dict-word rest)
+  (foldr (lambda(dict-word rest)
            (match rest
              [#f (if (match-char-list (string->list word) (string->list dict-word)) dict-word #f)]
              [#t #t]
              [w (if (match-char-list (string->list word) (string->list dict-word)) #t w)])) #f utils:dictionary))
 
 (define (substitution partial dict-word) ; a list of pair of subsitution, plaintext char to upper text char
-  (remove-duplicates (filter (λ(p) (lower? (cdr p))) (map (λ (x y) (cons y x)) (string->list partial) (string->list dict-word)))))
+  (remove-duplicates (filter (lambda(p) (lower? (cdr p))) (map (lambda (x y) (cons y x)) (string->list partial) (string->list dict-word)))))
 
 
 
 (define (decrypted-word? word)
-  (foldr (λ(x y) (and (not (lower? x)) y)) #t (string->list word)))
+  (foldr (lambda(x y) (and (not (lower? x)) y)) #t (string->list word)))
 (define (lower? char)
   (and (< (char->integer char) 123) (> (char->integer char) 96)))
 

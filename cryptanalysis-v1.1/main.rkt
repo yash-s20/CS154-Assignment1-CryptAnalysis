@@ -113,11 +113,24 @@
 ;; determine the key, return a partial key. A trivial partial key is a list         ;;
 ;; of 26 underscores.                                                               ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(define (subsitute-with-check sub key)
+  (if (utils:is-monoalphabetic? sub key) (utils:add-substitution sub key) #f))
+
+(define (complete? key)
+  (if (member #\_ key) #f #t))
 
 (define (crack-cipher strategies key) ;; Returns list of encryption keys.
   ;; make use of `utils:ciphertext` and `utils:cipher-word-list`
   ;; DISPLAY A KEY AS SOON AS YOU FIND IT USING (show-key key)
-  (list key))
+  (filter (lambda(_) #t) (append* (map (lambda (strategy) (foldr (lambda (sub y) (match (attempt-to-complete (utils:add-substitution sub key))
+                                                                    [#f y]
+                                                                    [k (cons k y)])) '() (strategy key))) strategies))))
+
+(define (attempt-to-complete key)
+  (match (algo:dictionary-closure key)
+    [#f #f]
+    [k (algo:secret-word-enumeration k)]))
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;                                 Optional task                                    ;;
@@ -133,4 +146,8 @@
 
 ;; my testing
 (define key2 (utils:encryption-key "wisdom"))
-(set! key2 (cons #\_ (cons #\_ (cons #\_ (cons #\_ (cons #\_ (cons #\_ (cddr (cddr (cddr key2))))))))))
+(define (fuzz-key iters key)
+  (if (= iters 0)
+      key
+      (fuzz-key (sub1 iters) (list-set key (random 26) #\_))))
+(define fuzzed (fuzz-key 10 key2))
