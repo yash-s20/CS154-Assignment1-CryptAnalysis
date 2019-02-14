@@ -58,7 +58,7 @@
       [(cons a b) (let ([c (count (lambda(x) (equal? x a)) w-l)]
                         [rest (filter (lambda(x) (not (equal? x a))) w-l)])
                     (sort-helper rest (insert (cons a c) s '())))]))
-  (map car (sort-helper word-list '())))
+  (sort-helper word-list '()))
 
 ;; Takes ciphertext and produces a list of cipher chars sorted in decreasing
 ;; order of frequency.
@@ -90,10 +90,14 @@
 ;; Takes the cipher-word-list and produces a list of 2-letter bigram (strings)
 ;; sorted in decreasing order of frequency. Each element must be a string!
 
-;; not needed
 (define (cipher-bigrams cipher-word-list)
-  '())
+  (map car (sort-and-set (append* (map (lambda(word) (word-bigrams (string->list word) '())) cipher-word-list)))))
 
+
+(define (word-bigrams w-l acc)
+  (match w-l
+    [(cons a '()) acc]
+    [(cons a (cons b c)) (word-bigrams (cons b c) (cons (list->string (list a b)) acc))]))
 ;; Takes the bigram frequency order (output of `cipher-bigrams`) and computes
 ;; the neighbourhood of each letter with every other letter. Only unique
 ;; neighbours are to be counted.
@@ -120,7 +124,19 @@
   ;; You must match against or test (using cond) for the `mode` argument. Possibilities are:
   ;; 'predecessor, 'successor, 'both
   ;; Figure out experimentally which of these is a good indicator for E vs T.
-  '())
+  (define (predecessor bigram)
+    (list (car (string->list bigram))))
+  (define (successor bigram)
+    (cdr (string->list bigram)))
+  (define (both bigram)
+    (string->list bigram))
+  (let ([filt (match mode
+                ['predecessor predecessor]
+                ['successor successor]
+                ['both both])])
+    (sort-and-set (append* (map
+              filt
+              cipher-bigrams-list)))))
 
 ;; Takes the bigram frequency order (output of `cipher-bigrams`) and computes
 ;; the neighbourhood of each letter with every other letter, but counts each
@@ -155,14 +171,14 @@
 
 (define (cipher-common-words-single cipher-word-list)
   (let ([single-words-list (filter (lambda(x) (= (length (string->list x)) 1)) cipher-word-list)])
-    (sort-and-set single-words-list)))
+    (map car (sort-and-set single-words-list))))
 
 ;; Takes the cipher word list and produces a list of double letter words, sorted
 ;; in decreasing order of frequency.
 ;; not needed
 (define (cipher-common-words-double cipher-word-list)
   (let ([double-words-list (filter (lambda(x) (= (length (string->list x)) 2)) cipher-word-list)])
-    (sort-and-set double-words-list)))
+    (map car (sort-and-set double-words-list))))
 
 ;; Takes the cipher word list and produces a list of triple letter words, sorted
 ;; in decreasing order of frequency.

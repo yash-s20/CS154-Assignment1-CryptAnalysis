@@ -80,7 +80,7 @@
 (define (monogram-mapping monograms)
   (list (list (cons #\A (car monograms)) (cons #\I (cadr monograms))) (list (cons #\A (cadr monograms)) (cons #\I (car monograms)))))
 
-(define (etai key) '())
+(define (etai key) '(()))
   ;(list (list (cons #\E #\o) (cons #\T #\e) (cons #\A #\w) (cons #\I #\q))))
 
 ;; A suggested composition of strategies that might work well. Has not been

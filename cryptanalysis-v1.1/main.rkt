@@ -122,14 +122,21 @@
 (define (crack-cipher strategies key) ;; Returns list of encryption keys.
   ;; make use of `utils:ciphertext` and `utils:cipher-word-list`
   ;; DISPLAY A KEY AS SOON AS YOU FIND IT USING (show-key key)
-  (filter (lambda(_) #t) (append* (map (lambda (strategy) (foldr (lambda (sub y) (match (attempt-to-complete (utils:add-substitution sub key))
-                                                                    [#f y]
-                                                                    [k (cons k y)])) '() (strategy key))) strategies))))
+  (define (crack-helper strategies key)
+    (if (null? strategies) (list key)
+        (append* (map (lambda (k) (crack-helper (cdr strategies) k))
+                      (foldr (lambda (sub y) (match (attempt-to-complete sub key)
+                                               [#f y]
+                                               [k (cons k y)])) '() ((car strategies) key))))))
+  (filter complete? (crack-helper strategies key)))
 
-(define (attempt-to-complete key)
-  (match (algo:dictionary-closure key)
-    [#f #f]
-    [k (algo:secret-word-enumeration k)]))
+(define (attempt-to-complete sub key)
+  (if (not (utils:is-monoalphabetic? sub key)) #f
+      (let ([nkey (utils:add-substitution sub key)])
+        (if (complete? nkey) nkey
+            (match (algo:dictionary-closure nkey)
+              [#f #f]
+              [k (algo:secret-word-enumeration k)])))))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -150,4 +157,4 @@
   (if (= iters 0)
       key
       (fuzz-key (sub1 iters) (list-set key (random 26) #\_))))
-(define fuzzed (fuzz-key 10 key2))
+(define fuzzed (fuzz-key 30 key2))
