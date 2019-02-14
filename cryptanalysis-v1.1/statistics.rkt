@@ -79,7 +79,7 @@
     (if (null? filtered) '()
         (let* ([that-char (car filtered)]
                [c (count (is-char-this that-char) filtered)]
-               [rest (filter (lambda(x) (not ((is-char-this that-char) x))) filtered)])
+             [rest (filter (lambda(x) (not ((is-char-this that-char) x))) filtered)])
           (insert that-char c (monogram-helper rest))))) 
 
   (let ([filtered-cipher (filter is-character? (string->list ciphertext))])
@@ -89,6 +89,8 @@
 
 ;; Takes the cipher-word-list and produces a list of 2-letter bigram (strings)
 ;; sorted in decreasing order of frequency. Each element must be a string!
+
+;; not needed
 (define (cipher-bigrams cipher-word-list)
   '())
 
@@ -135,11 +137,15 @@
 
 ;; Takes the cipher-word-list and produces a list of 3-letter bigram (strings)
 ;; sorted in decreasing order of frequency. Each element must be a string!
+
+;; not needed
 (define (cipher-trigrams cipher-word-list)
   '())
 
 ;; Takes the cipher-word-list and produces a list of 4-letter bigram (strings)
 ;; sorted in decreasing order of frequency. Each element must be a string!
+
+;; not needed
 (define (cipher-quadgrams cipher-word-list)
   '())
 
@@ -153,34 +159,45 @@
 
 ;; Takes the cipher word list and produces a list of double letter words, sorted
 ;; in decreasing order of frequency.
+;; not needed
 (define (cipher-common-words-double cipher-word-list)
   (let ([double-words-list (filter (lambda(x) (= (length (string->list x)) 2)) cipher-word-list)])
     (sort-and-set double-words-list)))
 
 ;; Takes the cipher word list and produces a list of triple letter words, sorted
 ;; in decreasing order of frequency.
+
+;; not needed
 (define (cipher-common-words-triple cipher-word-list)
   '())
 
 ;; Takes the cipher word list and produces a list of four letter words, sorted
 ;; in decreasing order of frequency.
+
+;; not needed
 (define (cipher-common-words-quadruple cipher-word-list)
   '())
 
 ;; Takes the cipher word list and produces a list of chars that appear at the
 ;; start of words, sorted in decreasing order of frequency. Each element must be
 ;; a char!
+
+;; not needed
 (define (cipher-common-initial-letters cipher-word-list)
   '())
 
 ;; Takes the cipher word list and produces a list of chars that appear at the
 ;; end of words, sorted in decreasing order of frequency. Each element must be
 ;; a char!
+
+;; not needed
 (define (cipher-common-final-letters cipher-word-list)
   '())
 
 ;; Takes the cipher word list and produces a list of chars that appear as
 ;; consecutive double letters in some word, sorted in decreasing order of
 ;; frequency. Each element must thus be a char!
+
+;; not needed
 (define (cipher-common-double-letters cipher-word-list)
   '())
