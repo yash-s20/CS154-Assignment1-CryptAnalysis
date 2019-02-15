@@ -108,7 +108,7 @@
   (cons singles (list (reverse singles))))
 
 (define (combination-et monograms singles)
-  (a-from-first-b (filter (lambda(x) (not (member x singles))) monograms) 2 5))
+  (a-from-first-b (filter (lambda(x) (not (member x singles))) monograms) 2 4))
 
 ;; permute-et gives the better order of permutation of e and t according to neighbours
 (define (permute-et combinations)

@@ -39,6 +39,8 @@
 ;;                                                                                  ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+
+
 (define (dictionary-closure key)
   (define (decrypt-partial key cipher-list)
     (map (lambda(x) (utils:decrypt key x)) cipher-list))
@@ -48,17 +50,17 @@
       ['() key]
       [(cons a b)
        #:when (decrypted-word? a)
-       (begin
-         (display a)
-         (displayln " <- skipping this one")
-       (find-for-each-word b))] ;; word already decrypted
+       ;(begin
+         ;(display a)
+         ;(displayln " <- skipping this one")
+       (find-for-each-word b)] ;; word already decrypted
       [(cons word b)
        (match (completion word)
          [#f #f]; key is incorrect
-         [#t (begin
-               (display word)
-               (displayln " <- multiple matches right now")
-               (find-for-each-word b))] ;; multiple matches right now
+         [#t ;(begin
+               ;(display word)
+               ;(displayln " <- multiple matches right now")
+               (find-for-each-word b)] ;; multiple matches right now
          [w (match (substitution word w)
               [x (if (utils:is-monoalphabetic? x key)
                      (begin

@@ -125,20 +125,25 @@
   (define (crack-helper strategies key)
     (if (null? strategies) (list key)
         (append* (map (lambda (k) (crack-helper (cdr strategies) k))
-                      (foldr (lambda (sub y) (begin
+                      (foldl (lambda (sub y) (begin
                                                (displayln sub)
                                                (match (attempt-to-complete sub key)
                                                  [#f y]
                                                  [k (cons k y)]))) '() ((car strategies) key))))))
-  (filter complete? (crack-helper strategies key)))
+  (filter complete? (foldl (lambda(x y) (match (algo:secret-word-enumeration x)
+                                                             [#f y]
+                                                             [k (cons k y)])) '() (crack-helper strategies key))))
+          ;(crack-helper strategies key)))
 
 (define (attempt-to-complete sub key)
   (if (not (utils:is-monoalphabetic? sub key)) #f
       (let ([nkey (utils:add-substitution sub key)])
-        (if (complete? nkey) nkey
+        (if (complete? nkey) (begin
+                               (displayln nkey)
+                               nkey)
             (match (algo:dictionary-closure nkey)
               [#f #f]
-              [k (algo:secret-word-enumeration k)])))))
+              [k k])))))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

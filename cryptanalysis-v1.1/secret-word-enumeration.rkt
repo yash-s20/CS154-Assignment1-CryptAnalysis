@@ -38,6 +38,10 @@
 (define (word-to-lower word)
   (list->string (map to-lower-case (string->list word))))
 
+
+(define (complete? key)
+  (if (member #\_ key) #f #t))
+
 (define (candidate? word)
   (define (unique? word)
     (match word
@@ -63,16 +67,18 @@
     [(cons (cons a _) (cons b _)) #f]))
 
 (define (secret-word-enumeration key-after-dictionary-closure) ;; Returns a key or false (#f)
-  (foldr (lambda(x y)
+  (match (foldr (lambda(x y)
            (let ([key-this-word (utils:encryption-key x)]
                  [nothing-after? (equal? key-after-dictionary-closure y)])
-             (cond [(and (correct-key? key-after-dictionary-closure key-this-word) nothing-after?) (begin
-                                                                                                     (utils:show-key key-this-word)
-                                                                                                     key-this-word)]
+             (cond [(and (correct-key? key-after-dictionary-closure key-this-word) nothing-after?) key-this-word]
                    [(not y) y]
                    [(correct-key? key-after-dictionary-closure key-this-word) (begin
                                                                                 (displayln "swe: #f")
                                                                                 #f)]
                    [(not nothing-after?) y]
-                   [else key-after-dictionary-closure]))) key-after-dictionary-closure possible-secret-list))
+                   [else key-after-dictionary-closure]))) key-after-dictionary-closure possible-secret-list)
+    [#f #f]
+    [key #:when(complete? key)
+         (begin (utils:show-key key) key)]
+    [key key]))
 
