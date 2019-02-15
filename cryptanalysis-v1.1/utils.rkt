@@ -134,9 +134,9 @@
 
 ;; The plain and cipher text
 
-(define plaintext (read-plaintext "samples/text-2-feynman.txt"))
+(define plaintext (read-plaintext "samples/text-4-sherlockholmes-short.txt"))
 ;; (define ciphertext (read-ciphertext "encrypted/02.txt"))
-(define ciphertext (encrypt (encryption-key "naguib") plaintext))
+(define ciphertext (encrypt (encryption-key "object") plaintext))
 
 ;; List of words
 (define dictionary

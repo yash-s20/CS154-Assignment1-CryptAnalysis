@@ -68,7 +68,9 @@
                        (displayln "... MATCH!")
                        (dictionary-closure (utils:add-substitution x key))) (begin
                                                                               (display word)
-                                                                              (displayln " <- No match found") #f))])])]))
+                                                                              (displayln " <- No match found")
+                                                                              (displayln "dc* : #f")
+                                                                              #f))])])]))
                 
        ;(cond [(and (completion word) (utils:is-monoalphabetic? (substitution word (completion word))))
          ;                   (dictionary-closure (utils:add-substitution (substitution word (completion word)) key))] ;;recurse or a new more complete key

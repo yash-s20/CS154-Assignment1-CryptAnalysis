@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>grading-scheme</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="/home/ananya/.emacs.d/github-markdown.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/contrib/auto-render.min.js"></script><script>document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body);
+  });</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<nav id="TOC">
+<ul>
+<li><a href="#cs152-assignment-1-grading-scheme-v1.2">CS152 Assignment 1 Grading Scheme (v1.2)</a><ul>
+<li><a href="#a-note-on-etai-occurrence-in-test-cases">A note on ETAI occurrence in test cases</a></li>
+<li><a href="#module-wise-split-up">Module-wise split up</a><ul>
+<li><a href="#main.rkt-45"><code>main.rkt</code> (45%)</a></li>
+<li><a href="#dict-closure.rkt-25"><code>dict-closure.rkt</code> (25%)</a></li>
+<li><a href="#secret-word-enumeration.rkt-10"><code>secret-word-enumeration.rkt</code> (10%)</a></li>
+<li><a href="#statistics.rkt-10"><code>statistics.rkt</code> (10%)</a></li>
+<li><a href="#strategies.rkt-10"><code>strategies.rkt</code> (10%)</a></li>
+</ul></li>
+<li><a href="#submission-format">Submission format</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="cs152-assignment-1-grading-scheme-v1.2">CS152 Assignment 1 Grading Scheme (v1.2)</h1>
+<p>The purpose of this assignment is to give you some practice with lists and strings. Not all functions will be automatically tested.</p>
+<p>We’ll test <code>crack-cipher</code> with different texts, ensuring that all words in that text are from <em>a</em> dictionary. All tests run on SL machines.</p>
+<p>We expect that the functions listed here are <code>provides</code>ed by the resp. modules. For each of these functions (<span class="math inline">\(F_i\)</span>) we have (<span class="math inline">\(N_i\)</span>) test cases, also each function has a weightage <span class="math inline">\(W_i\)</span>. Test cases of a function have the same weights.</p>
+<p>We compute your score in the conventional way: <span class="math display">\[ score  = \sum_{i}\ \frac{\#\ \text{of passed cases}}{N_i} \times W_i \]</span></p>
+<h2 id="a-note-on-etai-occurrence-in-test-cases">A note on ETAI occurrence in test cases</h2>
+<p>You cannot assume that ETAI feature in the top 5 of all graded test cases. Since most of you are planning to make just one strategy, we suggest you make it as powerful as you can (or split logic into multiple strategies), by using various statistics into account. See how we grade your strategy functions below, if your substitution list is shorter, you get more marks!</p>
+<h2 id="module-wise-split-up">Module-wise split up</h2>
+<h3 id="main.rkt-45"><code>main.rkt</code> (45%)</h3>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 72%" />
+<col style="width: 9%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Function</th>
+<th>Expected purpose</th>
+<th>Weightage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>crack-cipher</code></td>
+<td>solve ciphers of keys beginning with 6-letter secret word. <strong>Returns list of keys</strong>.</td>
+<td>4.5</td>
+</tr>
+<tr class="even">
+<td><code>crack-hard-cipher</code></td>
+<td>solve ciphers of keys that are a random permutation of the alphabet</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h4 id="the-list-of-keys">The list of keys</h4>
+<p>Well, not all test cases admit multiple keys. For those with just one key, finding that one gets you full credit. Otherwise we can have multiple keys and you get credit proportional to the ones you find.</p>
+<h4 id="partial-keys-or-timeout">Partial keys, or timeout</h4>
+<p>In case of your submission gets timed out, we will not recieve a list of keys, even though you have accumulated a few keys. Thus, we recommend you dump your buest guess to <code>stdout</code> whenever you feel like (confident about the guess) in the following format:</p>
+<pre><code>@@@+ &lt;key-number&gt;
+(&lt;A-Z&gt;)
+(key)
+@@@-</code></pre>
+<p>Since you compute a list of keys, the <code>key-number</code> helps us track which key this one is. The <code>key-number</code> is the index of the key being guessed.</p>
+<p>Here’s an example dump (<code>stdout</code>)</p>
+<pre><code>...
+...
+@@@+ 0
+(A B C D E F G H I J K L M N O P Q R S T U V W X Y Z)
+(w _ _ _ o _ _ _ q _ _ u _ _ _ _ _ _ _ e _ _ _ _ _ _)
+@@@-
+....
+...
+@@@+ 0
+(A B C D E F G H I J K L M N O P Q R S T U V W X Y Z)
+(w _ _ _ o _ _ _ q _ _ u v x y z _ b _ e _ _ _ _ _ _)
+@@@-
+...
+...
+@@@+ 0
+(A B C D E F G H I J K L M N O P Q R S T U V W X Y Z)
+(w i s d o m n p q r t u v x y z a b c e f g h j k l)
+@@@-
+...
+...
+@@@+ 1
+(A B C D E F G H I J K L M N O P Q R S T U V W X Y Z)
+(f _ x _ r _ _ _ v _ y _ a _ c d _ _ _ k _ _ _ o p _)
+@@@-
+...
+...
+@@@+ 1
+(A B C D E F G H I J K L M N O P Q R S T U V W X Y Z)
+(f i x e r s t u v _ y z a _ c d _ h j k l m _ o p _)
+@@@-
+...</code></pre>
+<p>ONLY in case of a timeout, we pick ONLY the last guess per index into account. Otherwise your function returned a list of keys.</p>
+<h4 id="partial-keys">Partial keys</h4>
+<p>Now that we have your best guess of keys, we look at the quality of the key.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Property</th>
+<th>Score</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>correct, completed</td>
+<td>100%</td>
+</tr>
+<tr class="even">
+<td>correct, partial</td>
+<td>proportional to number of substitutions</td>
+</tr>
+<tr class="odd">
+<td>partially wrong, partial</td>
+<td>like previous, but with penalty</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dict-closure.rkt-25"><code>dict-closure.rkt</code> (25%)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Function</th>
+<th>Expected purpose</th>
+<th>Weightage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>dictionary-closure</code></td>
+<td>As described in the docs</td>
+<td>2.5</td>
+</tr>
+</tbody>
+</table>
+<h3 id="secret-word-enumeration.rkt-10"><code>secret-word-enumeration.rkt</code> (10%)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Function</th>
+<th>Expected purpose</th>
+<th>Weightage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>secret-word-enumeration</code></td>
+<td>As described in the docs</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="statistics.rkt-10"><code>statistics.rkt</code> (10%)</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Function</th>
+<th>Expected purpose</th>
+<th>Weightage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>cipher-monograms</code></td>
+<td>As described in the docs</td>
+<td>0.2</td>
+</tr>
+<tr class="even">
+<td><code>cipher-bigrams</code></td>
+<td>As described in the docs</td>
+<td>0.2</td>
+</tr>
+<tr class="odd">
+<td><code>cipher-common-words-single</code></td>
+<td>As described in the docs</td>
+<td>0.2</td>
+</tr>
+<tr class="even">
+<td><code>cipher-unique-neighbourhood</code></td>
+<td>As described in the docs</td>
+<td>0.2</td>
+</tr>
+<tr class="odd">
+<td><code>cipher-neighbourhood</code></td>
+<td>As described in the docs</td>
+<td>0.2</td>
+</tr>
+</tbody>
+</table>
+<h3 id="strategies.rkt-10"><code>strategies.rkt</code> (10%)</h3>
+<p>The maximum marks you get for all of them is 10, since the performance of your strategy(ies) is already captured somewhat in <code>crack-cipher</code>.</p>
+<p>You can choose to make ETAI as powerful as you want <strong>as long as it gives substitutions only for ETAI</strong>, or keep ETAI lightweight and implement a few other strategies.</p>
+<p>We expect that all these strategies are “key-aware”, ie. give substitutions that will result in monoalphabetic keys. You will be penalized if that’s not the case.</p>
+<p><strong>Note that it is alright if some of the substitutions are redundant (when added to the key give the same key back, and add no new information into the key).</strong></p>
+<p>The score for a strategy depends on:</p>
+<ol type="1">
+<li><em>where</em> in the list of substitutions lie “correct” substitutions. A correct substitution is simply a subset of the/a correct key.</li>
+<li>inversely to the length of the substitutions list.</li>
+</ol>
+<p>We understand that people won’t implement the same no. of strategies and please trust that we’ll normalize the scores fairly in here.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Function</th>
+<th>Expected purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>etai</code></td>
+<td>Gives a list of substitutions for <strong>only</strong> E,T,A and I</td>
+</tr>
+<tr class="even">
+<td>others</td>
+<td>Don’t care</td>
+</tr>
+</tbody>
+</table>
+<p><strong>TL;DR</strong></p>
+<ol type="1">
+<li>Either make ETAI strong, or keep multiple strategies.</li>
+<li>Don’t sweat it too much, grading is going to be reasonable. The purpose is not to make you an expert cryptanalyst. No major penalties for being a lousy one.</li>
+</ol>
+<h2 id="submission-format">Submission format</h2>
+<p>We expect you will upload a <code>rollno-a1.tar.gz</code> archive on Moodle which contains a folder with the following structure. You’re free to upload extra racket modules.</p>
+<pre><code>rollno-a1/
+├── dict-closure.rkt
+├── main.rkt
+├── secret-word-enumeration.rkt
+├── statistics.rkt
+├── strategies.rkt
+└── utils.rkt
+
+# optional, if necessary
+└── additional-module.rkt</code></pre>
+<h2 id="conclusion">Conclusion</h2>
+<p>As long as your ETAI and dict-closure work well, you should not be worried about the score – you’ll do fine. We agree that the assignment had lots of moving parts, confusions and goof-ups and hope you’ll forgive us.</p>
+<p>We cannot guarantee that there will be zero subjective component in the grading. It might be hard to mathematically score everything <em>fairly</em>.</p>
+</body>
+</html>

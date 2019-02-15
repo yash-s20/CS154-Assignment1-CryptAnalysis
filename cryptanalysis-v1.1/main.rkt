@@ -125,9 +125,11 @@
   (define (crack-helper strategies key)
     (if (null? strategies) (list key)
         (append* (map (lambda (k) (crack-helper (cdr strategies) k))
-                      (foldr (lambda (sub y) (match (attempt-to-complete sub key)
-                                               [#f y]
-                                               [k (cons k y)])) '() ((car strategies) key))))))
+                      (foldr (lambda (sub y) (begin
+                                               (displayln sub)
+                                               (match (attempt-to-complete sub key)
+                                                 [#f y]
+                                                 [k (cons k y)]))) '() ((car strategies) key))))))
   (filter complete? (crack-helper strategies key)))
 
 (define (attempt-to-complete sub key)

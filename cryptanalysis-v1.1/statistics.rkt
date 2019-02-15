@@ -126,18 +126,21 @@
   ;; You must match against or test (using cond) for the `mode` argument. Possibilities are:
   ;; 'predecessor, 'successor, 'both
   ;; Figure out experimentally which of these is a good indicator for E vs T.
-  (define (predecessor bigram)
-    (list (car (string->list bigram))))
-  (define (successor bigram)
-    (cdr (string->list bigram)))
-  (define (both bigram)
-    (string->list bigram))
+  (define (predecessor bigram l)
+    (cons (list (car (string->list bigram))) l))
+  (define (successor bigram l)
+    (cons (cdr (string->list bigram)) l))
+  (define (both bigram l)
+    (cons (string->list bigram) (filter (lambda(x)
+					    (not (or (equal? (string->list bigram) x)
+						     (equal? (reverse (string->list bigram)) x)))) l))) 
   (let ([filt (match mode
                 ['predecessor predecessor]
                 ['successor successor]
                 ['both both])])
-    (sort-and-set (append* (map
+    (sort-and-set (append* (foldr
 			    filt
+			    '()
 			    cipher-bigrams-list)))))
 
 ;; Takes the bigram frequency order (output of `cipher-bigrams`) and computes
@@ -151,7 +154,19 @@
   ;; You must match against or test (using cond) for the `mode` argument. Possibilities are:
   ;; 'predecessor, 'successor, 'both
   ;; Figure out experimentally which of these is a good indicator for E vs T.
-  '())
+  (define (predecessor bigram)
+    (list (car (string->list bigram))))
+  (define (successor bigram)
+    (cdr (string->list bigram)))
+  (define (both bigram)
+    (string->list bigram))
+  (let ([filt (match mode
+                ['predecessor predecessor]
+                ['successor successor]
+                ['both both])])
+    (sort-and-set (append* (map
+			    filt
+			    cipher-bigrams-list)))))
 
 ;; Takes the cipher-word-list and produces a list of 3-letter bigram (strings)
 ;; sorted in decreasing order of frequency. Each element must be a string!
