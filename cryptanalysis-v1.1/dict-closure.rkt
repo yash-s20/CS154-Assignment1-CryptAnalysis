@@ -56,7 +56,11 @@
        (find-for-each-word b)] ;; word already decrypted
       [(cons word b)
        (match (completion word)
-         [#f #f]; key is incorrect
+         [#f (begin
+               (display word)
+               (displayln " <- No match found")
+               (displayln "dc* : #f")
+               #f)]; key is incorrect
          [#t ;(begin
                ;(display word)
                ;(displayln " <- multiple matches right now")
