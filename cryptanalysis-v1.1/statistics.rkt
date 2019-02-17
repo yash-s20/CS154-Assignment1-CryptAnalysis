@@ -49,18 +49,12 @@
 ;;sort a list in decreasing order of frequencies
 (define (sort-and-set word-list)
   (define (sort-helper w-l s)
-    (define (insert elem s acc)
-      (match s
-        ['() (reverse (cons elem acc))]
-        [(cons a b)
-         (if (>= (cdr a) (cdr elem)) (insert elem b (cons a acc))
-             (append (reverse (cons elem acc)) s))]))
     (match w-l
       ['() s]
       [(cons a b) (let ([c (count (lambda(x) (equal? x a)) w-l)]
                         [rest (filter (lambda(x) (not (equal? x a))) w-l)])
-                    (sort-helper rest (insert (cons a c) s '())))]))
-  (sort-helper word-list '()))
+                    (sort-helper rest (cons (cons a c) s)))]))
+  (sort (sort-helper word-list '()) (lambda(x y) (>= (cdr x) (cdr y)))))
 
 ;; Takes ciphertext and produces a list of cipher chars sorted in decreasing
 ;; order of frequency.
@@ -136,17 +130,18 @@
   (define (successor bigram l)
     (cons (cdr (string->list bigram)) l))
   (define (both bigram l)
-    (cons (string->list bigram) (filter (lambda(x)
-					    (not (or (equal? (string->list bigram) x)
-						     (equal? (reverse (string->list bigram)) x)))) l))) 
+    (cons (remove-duplicates (string->list bigram)) ;(filter (lambda(x)
+				;	    (not (or (equal? (string->list bigram) x)
+					;		     (equal? (reverse (string->list bigram)) x)))) l)))
+	  l))
   (let ([filt (match mode
                 ['predecessor predecessor]
                 ['successor successor]
                 ['both both])])
-    (complete-neighbourhood (sort-and-set (append* (foldr
+    (complete-neighbourhood (sort-and-set (append* (remove-duplicates (foldr
                                                     filt
                                                     '()
-                                                    cipher-bigrams-list))))))
+                                                    cipher-bigrams-list)))))))
 
 ;; Takes the bigram frequency order (output of `cipher-bigrams`) and computes
 ;; the neighbourhood of each letter with every other letter, but counts each
