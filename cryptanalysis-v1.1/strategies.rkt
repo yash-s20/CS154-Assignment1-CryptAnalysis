@@ -79,10 +79,14 @@
 ;; Refer the assignment manual for tips on developing this strategy. You can
 ;; interact with our etai with the executable we provide.
 (define etai-list (list #\E #\T #\A #\I))
-
+(define etia-list (list #\E #\T #\I #\A))
 
 (define (etai-mapping subs)
   (map (lambda(x y) (cons x y)) etai-list subs))
+
+(define (etia-mapping subs)
+  (map (lambda(x y) (cons x y)) etia-list subs))
+
 
 (define (atmost-a-from-l a l)
   (cond [(= a 0) '(())]
@@ -123,17 +127,8 @@
 
 ;; permute-et gives the better order of permutation of e and t according to neighbours
 (define (permute-et combinations)
-  ;(define (permute-each combination)
-    ;(define (permute-helper combination char-list)
-      ;(match (cons combination char-list)
-	;[(cons (list a b c ...) (cons a rest)) (list (list a b) (list b a))]
-	;[(cons (list a b c ...) (cons b rest)) (list (list b a) (list a b))]
-	;[(cons _ (cons a l)) (permute-helper combination l)]))
-    ;(permute-helper combination (map car most-unique-neighbours)))
   (append* (map (lambda(x) (sort (permutations x) ordering)) combinations)))
 
-(define (monogram-mapping monograms)
-  (list (list (cons #\A (car monograms)) (cons #\I (cadr monograms))) (list (cons #\A (cadr monograms)) (cons #\I (car monograms)))))
 
 (define (etai key)
   (let* ([monos (stats:cipher-monograms utils:ciphertext)]
@@ -143,7 +138,10 @@
 	 [perm-ai (permute-singles singles)]
 	 [perm-et (permute-et comb-et)])
     (filter (lambda(x) (utils:is-monoalphabetic? x key))
-	    (lc (etai-mapping (append x y)) : x <- perm-et y <- perm-ai))))
+            (cond [(null? perm-ai) (map etai-mapping perm-et)]
+                  [(null? (cdr perm-ai)) (append-map (lambda(x y) (list x y)) (lc (etai-mapping (append x y)) : x <- perm-et y <- perm-ai) (lc (etia-mapping (append x y)) : x <- perm-et y <- perm-ai))]
+                  [else 
+                   (lc (etai-mapping (append x y)) : x <- perm-et y <- perm-ai)]))))
 	 
   ;(list (list (cons #\E #\o) (cons #\T #\e) (cons #\A #\w) (cons #\I #\q))))
 
