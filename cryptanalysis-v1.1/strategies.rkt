@@ -104,22 +104,33 @@
    (stats:cipher-bigrams utils:cipher-word-list)
    'both))
 
-(define (permute-ai singles)
-  (cons singles (list (reverse singles))))
+(define (ordering x y)
+  (match (cons x y)
+    [(cons '() '()) #t]
+    [(cons (cons a b) (cons a c)) (ordering b c)]
+    [(cons (cons a b) (cons c d)) (< (index-of (map car most-unique-neighbours) a) (index-of (map car most-unique-neighbours) c))]))
 
-(define (combination-et monograms singles)
-  (a-from-first-b (filter (lambda(x) (not (member x singles))) monograms) 2 4))
+(define (permute-singles singles)
+  (cond [(null? singles) '()]
+	[(= 1 (length singles)) (list singles)]
+	[(= 2 (length singles)) 
+	 (cons singles (list (reverse singles)))]
+	[else (append* (map permutations (a-from-first-b singles 2 (length singles))))]))
+
+
+(define (combination-et.. monograms singles)
+  (a-from-first-b (filter (lambda(x) (not (member x singles))) monograms) (max (- 4 (length singles)) 2) (max (- 6 (length singles)) 4)))
 
 ;; permute-et gives the better order of permutation of e and t according to neighbours
 (define (permute-et combinations)
-  (define (permute-each combination)
-    (define (permute-helper combination char-list)
-      (match (cons combination char-list)
-	[(cons (list a b c ...) (cons a rest)) (list (list a b) (list b a))]
-	[(cons (list a b c ...) (cons b rest)) (list (list b a) (list a b))]
-	[(cons _ (cons a l)) (permute-helper combination l)]))
-    (permute-helper combination (map car most-unique-neighbours)))
-  (append* (map permute-each combinations)))
+  ;(define (permute-each combination)
+    ;(define (permute-helper combination char-list)
+      ;(match (cons combination char-list)
+	;[(cons (list a b c ...) (cons a rest)) (list (list a b) (list b a))]
+	;[(cons (list a b c ...) (cons b rest)) (list (list b a) (list a b))]
+	;[(cons _ (cons a l)) (permute-helper combination l)]))
+    ;(permute-helper combination (map car most-unique-neighbours)))
+  (append* (map (lambda(x) (sort (permutations x) ordering)) combinations)))
 
 (define (monogram-mapping monograms)
   (list (list (cons #\A (car monograms)) (cons #\I (cadr monograms))) (list (cons #\A (cadr monograms)) (cons #\I (car monograms)))))
@@ -128,8 +139,8 @@
   (let* ([monos (stats:cipher-monograms utils:ciphertext)]
 	 [singles (map (lambda(x) (car (string->list x)))
 		       (stats:cipher-common-words-single utils:cipher-word-list))]
-	 [comb-et (combination-et monos singles)]
-	 [perm-ai (permute-ai singles)]
+	 [comb-et (combination-et.. monos singles)]
+	 [perm-ai (permute-singles singles)]
 	 [perm-et (permute-et comb-et)])
     (filter (lambda(x) (utils:is-monoalphabetic? x key))
 	    (lc (etai-mapping (append x y)) : x <- perm-et y <- perm-ai))))
