@@ -70,7 +70,10 @@
   (match (foldr (lambda(x y)
            (let ([key-this-word (utils:encryption-key x)]
                  [nothing-after? (equal? key-after-dictionary-closure y)])
-             (cond [(and (correct-key? key-after-dictionary-closure key-this-word) nothing-after?) key-this-word]
+             (cond [(and (correct-key? key-after-dictionary-closure key-this-word) nothing-after?) (begin
+                                                                                                     (display x)
+                                                                                                     (displayln "?")
+                                                                                                     key-this-word)]
                    [(not y) y]
                    [(correct-key? key-after-dictionary-closure key-this-word) (begin
                                                                                 (displayln "swe: #f")
@@ -79,6 +82,8 @@
                    [else key-after-dictionary-closure]))) key-after-dictionary-closure possible-secret-list)
     [#f #f]
     [key #:when(complete? key)
-         (begin (utils:show-key key) key)]
+         (begin
+           (displayln "Just one unique secret word found!")
+           (utils:show-key key) key)]
     [key key]))
 

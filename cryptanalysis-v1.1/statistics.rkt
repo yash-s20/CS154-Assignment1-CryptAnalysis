@@ -159,7 +159,7 @@
   (define (successor bigram)
     (cdr (string->list bigram)))
   (define (both bigram)
-    (string->list bigram))
+    (remove-duplicates (string->list bigram)))
   (let ([filt (match mode
                 ['predecessor predecessor]
                 ['successor successor]
