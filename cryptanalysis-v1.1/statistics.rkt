@@ -53,7 +53,7 @@
       (match s
         ['() (reverse (cons elem acc))]
         [(cons a b)
-         (if (> (cdr a) (cdr elem)) (insert elem b (cons a acc))
+         (if (>= (cdr a) (cdr elem)) (insert elem b (cons a acc))
              (append (reverse (cons elem acc)) s))]))
     (match w-l
       ['() s]
@@ -122,6 +122,11 @@
 ;;
 ;; The output is a list of pairs of cipher char and the count of it's
 ;; neighbours. The list must be in decreasing order of the neighbourhood count.
+(define empty-neighbourhood
+  (build-list 26 (lambda(x) (cons (integer->char (+ x utils:CIPHER-BEGIN)) 0))))
+(define (complete-neighbourhood l)
+  (append l (filter (lambda(x) (not (member (car x) (map car l)))) empty-neighbourhood)))
+
 (define (cipher-unique-neighbourhood cipher-bigrams-list mode)
   ;; You must match against or test (using cond) for the `mode` argument. Possibilities are:
   ;; 'predecessor, 'successor, 'both
@@ -138,10 +143,10 @@
                 ['predecessor predecessor]
                 ['successor successor]
                 ['both both])])
-    (sort-and-set (append* (foldr
-			    filt
-			    '()
-			    cipher-bigrams-list)))))
+    (complete-neighbourhood (sort-and-set (append* (foldr
+                                                    filt
+                                                    '()
+                                                    cipher-bigrams-list))))))
 
 ;; Takes the bigram frequency order (output of `cipher-bigrams`) and computes
 ;; the neighbourhood of each letter with every other letter, but counts each
@@ -164,9 +169,9 @@
                 ['predecessor predecessor]
                 ['successor successor]
                 ['both both])])
-    (sort-and-set (append* (map
-			    filt
-			    cipher-bigrams-list)))))
+    (complete-neighbourhood (sort-and-set (append* (map
+                                                    filt
+                                                    cipher-bigrams-list))))))
 
 ;; Takes the cipher-word-list and produces a list of 3-letter bigram (strings)
 ;; sorted in decreasing order of frequency. Each element must be a string!
