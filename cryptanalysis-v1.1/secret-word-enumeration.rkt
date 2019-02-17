@@ -67,7 +67,7 @@
     [(cons (cons a _) (cons b _)) #f]))
 
 (define (secret-word-enumeration key-after-dictionary-closure) ;; Returns a key or false (#f)
-  (match (foldr (lambda(x y)
+  (match (foldl (lambda(x y)
            (let ([key-this-word (utils:encryption-key x)]
                  [nothing-after? (equal? key-after-dictionary-closure y)])
              (cond [(and (correct-key? key-after-dictionary-closure key-this-word) nothing-after?) (begin
@@ -76,6 +76,8 @@
                                                                                                      key-this-word)]
                    [(not y) y]
                    [(correct-key? key-after-dictionary-closure key-this-word) (begin
+                                                                                (display x)
+                                                                                (displayln "?")
                                                                                 (displayln "swe: #f")
                                                                                 #f)]
                    [(not nothing-after?) y]
