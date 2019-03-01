@@ -166,7 +166,7 @@
                 ['both both])])
     (complete-neighbourhood (sort-and-set (append* (map
                                                     filt
-                                                    cipher-bigrams-list))))))
+                                                    (remove-duplicates cipher-bigrams-list)))))))
 
 ;; Takes the cipher-word-list and produces a list of 3-letter bigram (strings)
 ;; sorted in decreasing order of frequency. Each element must be a string!
